@@ -1,26 +1,44 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-jakarta: var(--font-jakrata);
+  --font-poppins: var(--font-poppins);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px); /* upar jane ki distance */
+  }
+}
+@keyframes floatr {
+  0%, 100% {
+    transform: translateY(-15px);
+  }
+  50% {
+    transform: translateY(4px); /* upar jane ki distance */
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.upAndDown {
+  animation: float 3s ease-in-out infinite;
 }
+.downAndUp {
+  animation: floatr 3s ease-in-out infinite;
+}
+
+
+  .clip-header {
+    clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+  }
+
+  .clip-box {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 5% 100%, 0 90%);
+  }
