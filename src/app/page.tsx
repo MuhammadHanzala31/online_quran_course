@@ -5,6 +5,7 @@ import StepsSection from "./sections/homepage/StepsSection";
 import BookForm from "./sections/homepage/BookForm";
 import FeaturedCourse from "./sections/homepage/FeaturedCourse";
 import FreeCourse from "./sections/homepage/FreeCourse";
+import GrainSection from "./sections/homepage/GrainSection";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
        <div className="bg-[#F6F6F6]">
         <FreeCourse/>
        </div>
+       <GrainSection/>
       </>
   );
 }

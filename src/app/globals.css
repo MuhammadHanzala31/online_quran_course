@@ -92,3 +92,5 @@
     line-height: 1;
     font-weight: 900;
 }
+.grain-clip{
+clip-path: polygon(8% 0, 100% 0%, 93% 100%, 0% 100%);}
