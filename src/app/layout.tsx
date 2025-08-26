@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Plus_Jakarta_Sans, Poppins } from "next/font/google";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import "./globals.css";
+import 'remixicon/fonts/remixicon.css'
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -19,7 +22,7 @@ const jakarta = Plus_Jakarta_Sans({
 
 // Poppins
 const poppins = Poppins({
-  subsets: ["latin"],
+  subsets: ["latin", "devanagari"],
   weight: ["400", "500", "600", "700"], // jo chahiye wo select karo
   variable: "--font-poppins",
 });
