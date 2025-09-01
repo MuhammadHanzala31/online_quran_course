@@ -13,9 +13,13 @@ export default function GrainSection() {
                 <GrainCard/>
                 <GrainCard/>
                 <GrainCard/>
+            </div>
+            <div className='grid grid-cols-3 mt-4 space-x-[47px] space-y-2'>
                 <GrainCard/>
                 <GrainCard/>
                 <GrainCard/>
+            </div>
+            <div className='grid grid-cols-3 mt-4 space-x-[47px] space-y-2'>
                 <GrainCard/>
                 <GrainCard/>
                 <GrainCard/>

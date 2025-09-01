@@ -6,6 +6,13 @@ import BookForm from "./sections/homepage/BookForm";
 import FeaturedCourse from "./sections/homepage/FeaturedCourse";
 import FreeCourse from "./sections/homepage/FreeCourse";
 import GrainSection from "./sections/homepage/GrainSection";
+import WhyChoose from "./sections/homepage/WhyChoose";
+import Teachers from "./sections/homepage/Teachers";
+import AdvancedLmsSectin from "./sections/homepage/AdvancedLmsSectin";
+import Aboutus from "./sections/homepage/Aboutus";
+import OurMission from "./sections/homepage/OurMission";
+import RequestFormSection from "./sections/homepage/RequestFormSection";
+import FaqsSection from "./sections/homepage/FaqsSection";
 
 export default function Home() {
   return (
@@ -19,6 +26,13 @@ export default function Home() {
         <FreeCourse/>
        </div>
        <GrainSection/>
+       <WhyChoose/>
+       <Teachers/>
+       <AdvancedLmsSectin/>
+       <Aboutus/>
+       <OurMission/>
+       <RequestFormSection/>
+       <FaqsSection/>
       </>
   );
 }

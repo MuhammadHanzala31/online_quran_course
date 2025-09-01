@@ -92,5 +92,25 @@
     line-height: 1;
     font-weight: 900;
 }
-.grain-clip{
-clip-path: polygon(8% 0, 100% 0%, 93% 100%, 0% 100%);}
+/* .grain-clip{
+clip-path: polygon(8% 0, 100% 0%, 93% 100%, 0% 100%);
+} */
+
+.choose-card::before{
+  content: url(../../public/why-card-before.png);
+  left: 0%;
+  bottom: 0%;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  z-index: 3;
+}
+.choose-card:hover.choose-card::before{
+  content: none;
+}
+
+
+.our-mission{
+  background-image: url(../../public/or-missionn.png);
+  background-size: cover;
+}
