@@ -21,7 +21,7 @@ interface PageProps {
   };
 }
 
-export default function page( params  : PageProps) {
+export default function page( { params }: PageProps) {
     return (
         <div>
             <div className=' contact-hero lg:py-[40px] py-10'>
