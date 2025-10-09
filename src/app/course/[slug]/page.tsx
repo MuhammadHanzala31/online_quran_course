@@ -15,11 +15,13 @@ import StepsSection from '@/app/sections/homepage/StepsSection'
 import Teachers from '@/app/sections/homepage/Teachers'
 
 
-interface Params {
-    slug: string
+interface PageProps {
+  params: {
+    slug: string;
+  };
 }
 
-export default function page({ params } : { params: Params }) {
+export default function page( params  : PageProps) {
     return (
         <div>
             <div className=' contact-hero lg:py-[40px] py-10'>
