@@ -25,7 +25,7 @@ export default function Hero() {
             <Image
               src={Yellow}
               alt="yellow"
-              className="absolute left-0 -bottom-6 sm:-bottom-10 md:-bottom-14 lg:-bottom-20 w-20 sm:w-28 md:w-36 lg:w-auto"
+              className="absolute left-0 -bottom-6 sm:-bottom-10 md:-bottom-14 lg:-bottom-30 w-20 sm:w-28 md:w-36 lg:w-auto"
             />
           </h1>
 

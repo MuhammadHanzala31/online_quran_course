@@ -13,6 +13,7 @@ import Aboutus from "./sections/homepage/Aboutus";
 import OurMission from "./sections/homepage/OurMission";
 import RequestFormSection from "./sections/homepage/RequestFormSection";
 import FaqsSection from "./sections/homepage/FaqsSection";
+import SliderTestimonial from "./sections/homepage/SliderTestimonial";
 
 export default function Home() {
   return (
@@ -29,6 +30,7 @@ export default function Home() {
        <WhyChoose/>
        <Teachers/>
        <AdvancedLmsSectin/>
+       <SliderTestimonial/>
        <Aboutus/>
        <OurMission/>
        <RequestFormSection/>
