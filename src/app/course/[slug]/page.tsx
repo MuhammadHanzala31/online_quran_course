@@ -16,13 +16,15 @@ import Teachers from '@/app/sections/homepage/Teachers'
 
 
 interface PageProps {
-   params: Promise<{ slug: string }>
+  params: {
+    slug: string;
+  };
 }
 
-export default  async function page( { params }: Awaited<PageProps>) {
+export default function page({params} : PageProps) {
     return (
         <div>
-            <div className=' contact-hero lg:py-[40px] py-10'>
+            <div className='contact-hero lg:py-[40px] py-10'>
                 <SectionLayout>
                     <div className='flex lg:flex-row flex-col justify-between items-center '>
                         <div className='flex flex-col lg:w-1/2 w-full gap-6'>
