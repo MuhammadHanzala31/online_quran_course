@@ -19,7 +19,7 @@ interface PageProps {
    params: Promise<{ slug: string }>
 }
 
-export default  function page( { params }: Awaited<PageProps>) {
+export default  async function page( { params }: Awaited<PageProps>) {
     return (
         <div>
             <div className=' contact-hero lg:py-[40px] py-10'>
