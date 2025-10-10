@@ -20,11 +20,11 @@ export const metadata: Metadata = {
     title: "Course Details",
 };
 
-type Props = {
-    params: { slug: string };
-};
+// type Props = {
+//     params: { slug: string };
+// };
 
-export default function Page({ params }: Props) {
+export default function Page({ params }: any) {
 
     const { slug } = params;
 
