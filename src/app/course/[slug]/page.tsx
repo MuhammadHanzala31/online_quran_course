@@ -13,22 +13,29 @@ import WhyChoose from '@/app/sections/homepage/WhyChoose'
 import FreeCourseCard from '@/app/components/homepage/FreeCourseCard'
 import StepsSection from '@/app/sections/homepage/StepsSection'
 import Teachers from '@/app/sections/homepage/Teachers'
+import { Metadata } from 'next'
 
 
-interface PageProps {
-  params: {
-    slug: string;
-  };
-}
+export const metadata: Metadata = {
+    title: "Course Details",
+};
 
-export default function page({params} : PageProps) {
+type Props = {
+    params: { slug: string };
+};
+
+export default function Page({ params }: Props) {
+
+    const { slug } = params;
+
+
     return (
         <div>
             <div className='contact-hero lg:py-[40px] py-10'>
                 <SectionLayout>
                     <div className='flex lg:flex-row flex-col justify-between items-center '>
                         <div className='flex flex-col lg:w-1/2 w-full gap-6'>
-                            <h1 className='text-white  w-full  font-poppins text-5xl font-medium'>{params.slug}</h1>
+                            <h1 className='text-white  w-full  font-poppins text-5xl font-medium'>{slug}</h1>
                             <p className=' font-poppins text-white text-[16px]'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, deleniti architecto adipisci vitae iusto laudantium fuga sit ipsa molestias voluptatem repudiandae, voluptates odio excepturi accusantium quam rerum. Quod aperiam debitis assumenda, ut, vitae cupiditate accusamus quibusdam, atque quisquam eos illo animi sed labore saepe cumque possimus. Qui maiores odit animi.</p>
                             <p className=' font-poppins text-white text-[16px]'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, deleniti architecto adipisci vitae iusto laudantium fuga sit ipsa molestias voluptatem repudiandae, voluptates odio excepturi accusantium quam rerum. Quod aperiam debitis assumenda, ut, vitae cupiditate accusamus quibusdam, atque quisquam eos illo animi sed labore saepe cumque possimus. Qui maiores odit animi.</p>
                             <p className=' font-poppins text-white text-[16px]'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, deleniti architecto adipisci vitae iusto laudantium fuga sit ipsa molestias voluptatem repudiandae, voluptates odio excepturi accusantium quam rerum. Quod aperiam debitis assumenda, ut, vitae cupiditate accusamus quibusdam, atque quisquam eos illo animi sed labore saepe cumque possimus. Qui maiores odit animi.</p>
@@ -87,7 +94,7 @@ export default function page({params} : PageProps) {
                             consistent, and effective.
                         </p>
                         <div className="relative w-64 h-64">
-                            <Image src={section3} alt='sorry'/>
+                            <Image src={section3} alt='sorry' />
                         </div>
                     </div>
                     <div className="relative">
@@ -131,7 +138,7 @@ export default function page({params} : PageProps) {
                     </div>
                 </div>
             </SectionLayout>
-       <StepsSection />
+            <StepsSection />
             <div className="bg-[#F6F6F6]">
                 <SectionLayout>
                     <h4 className='text-4xl font-medium font-poppins text-black py-9 text-center mx-auto  max-w-[614px]'>Featured <span className='text-[#098A46]'> Courses</span></h4>
