@@ -16,12 +16,10 @@ import Teachers from '@/app/sections/homepage/Teachers'
 
 
 interface PageProps {
-  params: {
-    slug: string;
-  };
+   params: Promise<{ slug: string }>
 }
 
-export default async  function page( { params }: PageProps) {
+export default  function page( { params }: Awaited<PageProps>) {
     return (
         <div>
             <div className=' contact-hero lg:py-[40px] py-10'>
