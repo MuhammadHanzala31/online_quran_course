@@ -24,6 +24,9 @@ export default function Navbar() {
             <Link href="/contact-us" className="hover:text-[#FFB706]">Contact</Link>
             <Link href="/blogs" className="hover:text-[#FFB706]">blogs</Link>
             <Link href="/kids" className="hover:text-[#FFB706]">kids</Link>
+            <Link href="/all-courses" className="hover:text-[#FFB706]">all courses</Link>
+            <Link href="/all-teachers" className="hover:text-[#FFB706]">all Teachers</Link>
+            <Link href="/male-and-female" className="hover:text-[#FFB706]">Male & female Teachers</Link>
           </div>
 
           {/* Mobile Menu Button */}
