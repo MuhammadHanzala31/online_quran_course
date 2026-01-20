@@ -12,6 +12,9 @@ import Aboutus from '../sections/homepage/Aboutus'
 import RequestFormSection from '../sections/homepage/RequestFormSection'
 import FaqsSection from '../sections/homepage/FaqsSection'
 import OurMission from '../sections/homepage/OurMission'
+import BookForm from '../sections/homepage/BookForm'
+import SliderTestimonial from '../sections/homepage/SliderTestimonial'
+import LmsSection from '../components/LmsSection'
 
 export default function page() {
     return (
@@ -74,6 +77,7 @@ export default function page() {
                 </div>
             </SectionLayout>
             <StepsSection />
+            <BookForm/>
             <div className="bg-[#F6F6F6]">
                 <SectionLayout>
                     <h4 className='text-4xl font-medium font-poppins text-black py-9 text-center mx-auto  max-w-[614px]'>Featured <span className='text-[#098A46]'> Courses</span></h4>
@@ -112,6 +116,8 @@ export default function page() {
             <Teachers />
             <OurMission />
             <Aboutus />
+            <LmsSection/>
+            <SliderTestimonial/>
             <RequestFormSection />
             <FaqsSection />
         </>

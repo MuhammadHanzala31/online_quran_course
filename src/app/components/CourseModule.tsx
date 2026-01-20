@@ -24,3 +24,5 @@ export default function CourseModule({ id, level, title, description, image }: P
     </div>
   );
 }
+
+
