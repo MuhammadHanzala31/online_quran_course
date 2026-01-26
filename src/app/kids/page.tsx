@@ -29,14 +29,14 @@ export default function page() {
                             Get Enrolled Now
                         </button>
                     </div>
-                    <div className='lg:w-1/2 w-full text-center flex justify-end'>
+                    <div className='lg:w-1/2 w-full text-center flex justify-center'>
                         <Image src={kid1} alt='sorry' height={450} />
                     </div>
                 </div>
             </SectionLayout>
             <SectionLayout>
                 <div className='flex lg:flex-row flex-col gap-6'>
-                    <div className='lg:w-1/2 w-full text-center flex justify-start'>
+                    <div className='lg:w-1/2 w-full text-center flex justify-center'>
                         <Image src={kid2} alt='sorry' height={450} />
                     </div>
                     <div className='flex flex-col gap-4 self-start lg:w-1/2 w-full'>

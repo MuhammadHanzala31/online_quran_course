@@ -13,8 +13,8 @@ export default function Teachers() {
                     Our academy offers skilled male and female Quran tutors, ensuring every student learns comfortably, confidently, and effectively according to their preferences, with personalized guidance for all ages and learning levels.</p>
             </div>
             <div className='flex lg:flex-row flex-col mx-auto max-w-[992px] gap-4'>
-                <TeacherBlock/>
-                <TeacherBlock/>
+                <TeacherBlock />
+                <TeacherBlock bgColor='bg-[#098A46]' textColor='text-white'/>
             </div>
             <div className='flex lg:flex-row flex-col gap-13 mt-[100px]'>
                 <TeacherCard/>

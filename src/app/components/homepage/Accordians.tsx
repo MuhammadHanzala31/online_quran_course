@@ -1,38 +1,32 @@
 "use client";
 import { useState } from "react";
-import { ChevronDown } from "lucide-react";
 
-interface AccordionProps {
-  title: string;
-  content: string;
-}
-
-export default function Accordion({ title, content }: AccordionProps) {
+export default function Accordion({ title, content } : any) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="bg-white px-4">
+    <div
+      className={`rounded-md overflow-hidden transition-all duration-300 cursor-pointer ${
+        isOpen ? "bg-[#098A46] text-white" : "bg-white text-black"
+      }`}
+    >
       {/* Header */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="w-full flex justify-between items-center py-4 text-left font-medium text-lg "
+        className="w-full flex justify-between items-center p-4 font-poppins font-medium text-left"
       >
-        {title}
-        <ChevronDown
-          className={`h-5 w-5 transform transition-transform duration-300 ${
-            isOpen ? "rotate-180" : ""
-          }`}
-        />
+        <span>{title}</span>
+        <span className="text-2xl font-bold">
+          {isOpen ? "−" : "+"}
+        </span>
       </button>
 
       {/* Content */}
-      <div
-        className={`transition-all duration-300 overflow-hidden ${
-          isOpen ? "max-h-40" : "max-h-0"
-        }`}
-      >
-        <p className="text-gray-600 pb-4">{content}</p>
-      </div>
+      {isOpen && (
+        <div className="px-4 pb-4 text-sm font-poppins leading-relaxed">
+          {content}
+        </div>
+      )}
     </div>
   );
 }
