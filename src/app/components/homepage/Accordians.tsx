@@ -10,7 +10,6 @@ export default function Accordion({ title, content } : any) {
         isOpen ? "bg-[#098A46] text-white" : "bg-white text-black"
       }`}
     >
-      {/* Header */}
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="w-full flex justify-between items-center p-4 font-poppins font-medium text-left"
@@ -20,8 +19,6 @@ export default function Accordion({ title, content } : any) {
           {isOpen ? "−" : "+"}
         </span>
       </button>
-
-      {/* Content */}
       {isOpen && (
         <div className="px-4 pb-4 text-sm font-poppins leading-relaxed">
           {content}

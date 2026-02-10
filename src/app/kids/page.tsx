@@ -46,12 +46,14 @@ export default function page() {
                             <div className='flex items-center gap-2'>
                                 <Image src={kids} alt='sorry' />
                                 <span className='max-w-[170px] font-semibold text-[22px] font-poppins text-[#535353]'>Lorem Ipsum
-                                    is simply</span>
+                                    is simply
+                                </span>
                             </div>
                             <div className='flex items-center gap-2'>
                                 <Image src={kids} alt='sorry' />
                                 <span className='max-w-[170px] font-semibold text-[22px] font-poppins text-[#535353]'>Lorem Ipsum
-                                    is simply</span>
+                                    is simply
+                                </span>
                             </div>
                         </div>
                     </div>

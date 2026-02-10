@@ -247,3 +247,9 @@ clip-path: polygon(8% 0, 100% 0%, 93% 100%, 0% 100%);
 .testimonials-s::after{
   right: 1%;
 }
+.r-form{
+  background-image: url(../../public/form-bg.png);
+  background-position:  calc(43%);
+  background-repeat: no-repeat;
+  background-size: contain;
+}

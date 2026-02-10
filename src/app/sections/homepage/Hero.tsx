@@ -30,9 +30,7 @@ export default function Hero() {
           </h1>
 
           <p className="text-sm sm:text-base md:text-lg mt-3 font-poppins font-normal text-[#535353] max-w-[90%] md:max-w-[80%] lg:max-w-[70%] mx-auto lg:mx-0">
-            Lorem Ipsum is simply dummy text of the printing Lorem Ipsum is
-            simply dummy text of the printing Lorem Ipsum is simply dummy text
-            of the printing
+            Lorem Ipsum is simply dummy text of the printing Lorem Ipsum is simply dummy text of the printing Lorem Ipsum is simply dummy text of the printing  
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 items-center mt-4 justify-center lg:justify-start">
