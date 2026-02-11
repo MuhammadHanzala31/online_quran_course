@@ -13,5 +13,5 @@ export default function TeacherBlock({title, description, bgColor, textColor} : 
        <h3 className={`${textColor ? textColor : 'text-[#5da37e]'} text-[24px] font-semibold font-poppins text-center`}>{title ? title : 'Male Tutors'}</h3>
        <p className={`${textColor ? textColor : 'text-black'} font-normal font-poppins text-[16px] text-center`}>{description ? description : 'Experienced scholars providing patient, clear, and structured Quran lessons tailored to male students.'}</p>
     </div>
-  )
+  ) 
 }

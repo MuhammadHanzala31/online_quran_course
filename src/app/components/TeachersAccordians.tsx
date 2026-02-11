@@ -1,6 +1,9 @@
 "use client"
 
+import { Imprima } from "next/font/google"
+import Image from "next/image"
 import { useState } from "react"
+import image1 from '@/../public/single-t-5.png'
 
 export default function TeachersAccordians() {
   const [openAccordion, setOpenAccordion] = useState<number | null>(0)
@@ -98,7 +101,7 @@ export default function TeachersAccordians() {
           {/* Right Circle */}
           <div className="flex justify-center items-center">
             <div className="w-[400px] h-[400px] bg-white rounded-full shadow-2xl flex items-center justify-center">
-              <h2 className="text-3xl font-normal font-poppins text-[#4CAF50]">Creative</h2>
+              <Image src={image1} alt="image1"/>
             </div>
           </div>
         </div>

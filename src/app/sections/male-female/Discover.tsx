@@ -1,7 +1,7 @@
 import SectionLayout from '@/app/components/SectionLayout'
 import Image from 'next/image'
 import React from 'react'
-import blank from '@/../public/Group 4.png'
+import blank from '@/../public/single-t-7.png'
 
 export default function Discover() {
     return <SectionLayout>
