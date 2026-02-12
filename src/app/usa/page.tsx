@@ -11,6 +11,9 @@ import Aboutus from '../sections/homepage/Aboutus'
 import RequestFormSection from '../sections/homepage/RequestFormSection'
 import FaqsSection from '../sections/homepage/FaqsSection'
 import OurMission from '../sections/homepage/OurMission'
+import BookForm from '../sections/homepage/BookForm'
+import FeaturedCourse from '../sections/homepage/FeaturedCourse'
+import FreeCourse from '../sections/homepage/FreeCourse'
 
 export default function page() {
     return (
@@ -73,39 +76,10 @@ export default function page() {
                 </div>
             </SectionLayout>
             <StepsSection />
+            <BookForm />
+            <FeaturedCourse />
             <div className="bg-[#F6F6F6]">
-                <SectionLayout>
-                    <h4 className='text-4xl font-medium font-poppins text-black py-9 text-center mx-auto  max-w-[614px]'>Featured <span className='text-[#098A46]'> Courses</span></h4>
-                    <div className='grid grid-cols-3 space-x-2 space-y-2' data-aos="zoom-in-up">
-                        <FreeCourseCard />
-                        <FreeCourseCard />
-                        <FreeCourseCard />
-                        <FreeCourseCard />
-                        <FreeCourseCard />
-                    </div>
-                </SectionLayout>
-            </div>
-            <SectionLayout>
-                <h4 className='text-4xl font-medium font-poppins text-black py-9 text-center mx-auto  max-w-[614px]'>Free Online Quran Classes  <span className='text-[#098A46]'> By OQC Academy</span></h4>
-                <div className='grid grid-cols-3 space-x-2 space-y-2' data-aos="zoom-in-up">
-                    <FreeCourseCard />
-                    <FreeCourseCard />
-                    <FreeCourseCard />
-                    <FreeCourseCard />
-                    <FreeCourseCard />
-                </div>
-            </SectionLayout>
-            <div className="bg-[#F6F6F6]">
-                <SectionLayout>
-                    <h4 className='text-4xl font-medium font-poppins text-black py-9 text-center mx-auto  max-w-[614px]'>What The Adults Will Learn In The <span className='text-[#098A46]'>Online Quran Classes </span></h4>
-                    <div className='grid grid-cols-3 space-x-2 space-y-2' data-aos="zoom-in-up">
-                        <FreeCourseCard />
-                        <FreeCourseCard />
-                        <FreeCourseCard />
-                        <FreeCourseCard />
-                        <FreeCourseCard />
-                    </div>
-                </SectionLayout>
+                <FreeCourse />
             </div>
             <WhyChoose/>
             <Teachers/>

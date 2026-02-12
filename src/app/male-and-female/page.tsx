@@ -6,11 +6,7 @@ import MeetTeachers from '../sections/male-female/MeetTeachers'
 import Discover from '../sections/male-female/Discover'
 import RequestFormSection from '../sections/homepage/RequestFormSection'
 import TeachersAccordians from '../components/TeachersAccordians'
-import blank from '@/../public/single-t-1.png'
-import single2 from '@/../public/single-t-2.png'
-import single3 from '@/../public/single-t-3.png'
 import single4 from '@/../public/single-t-4.png'
-import single5 from '@/../public/single-t-5.png'
 import single6 from '@/../public/single-t-6.png'
 
 export default function page(){

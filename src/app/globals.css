@@ -57,47 +57,13 @@
 .slick-prev:focus,
 .slick-next:hover,
 .slick-next:focus {
-  color: black;
+  color: black !important;
   background: gray;
   outline: none;
 }
 
-.slick-prev {
-  left: -70px;
-  background: #F7F7F7 !important;
-  rotate: 90deg;
-}
 
-.slick-next {
-  left: -70px;
-  top: 63% !important;
-  background: #F7F7F7 !important;
-  rotate: 90deg;
-  display: flex !important;
-  justify-content: center;
-  align-items: center;
-}
 
-.slick-prev,
-.slick-next {
-  cursor: pointer;
-  color: black;
-  background: none;
-  border: none;
-  outline: none;
-  width: 40px;
-  height: 40px;
-  padding: 0;
-  font-size: 0;
-  line-height: 0;
-  display: block;
-  position: absolute;
-  top: 52%;
-  transform: translate(0, -50%);
-  border-radius: 9999px;
-  font-weight: 900;
-  box-shadow: 0 0 2px #F7F7F7;
-}
 
 .slick-prev:before,
 .slick-next:before {
@@ -109,6 +75,54 @@
   font-size: 30px;
   line-height: 1;
   font-weight: 900;
+}
+.slick-prev:before{
+  color: #098A46 !important;
+}
+.slick-next:before{
+  color: #FFFFFF !important;
+}
+
+.slick-prev, .slick-next {
+    cursor: pointer;
+    color: #000;
+    background: none;
+    border: none;
+    border-radius: 9999px;
+    outline: none;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    font-size: 0;
+    font-weight: 900;
+    line-height: 0;
+    display: block;
+    position: absolute;
+    /* top: 52%; */
+    /* transform: translate(0, -50%); */
+    box-shadow: 0 0 2px #f7f7f7;
+}
+.slick-prev {
+    top: 128%;
+    right: 23%;
+    /* rotate: 90deg; */
+    background: #DDFFED !important;
+}
+.slick-prev {
+    left: unset;
+}
+.slick-next {
+    justify-content: center;
+    align-items: center;
+    right: 19%;
+    /* rotate: 90deg; */
+    background: #098A46 !important;
+    display: flex !important;
+    top: 128% !important;
+}
+
+.slick-next {
+    /* right: unset !important; */
 }
 
 /* .grain-clip{
@@ -240,6 +254,9 @@ clip-path: polygon(8% 0, 100% 0%, 93% 100%, 0% 100%);
   z-index:99999;
   top:350px;
 }
+.testimonials-s .slick-next:before, .testimonials-s .slick-prev:before{
+  color: #000 !important;
+}
 
 .testimonials-s::before{
   left: 1%;
@@ -253,3 +270,6 @@ clip-path: polygon(8% 0, 100% 0%, 93% 100%, 0% 100%);
   background-repeat: no-repeat;
   background-size: contain;
 }
+
+
+

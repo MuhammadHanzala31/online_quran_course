@@ -98,7 +98,6 @@ export default function TeachersAccordians() {
             </div>
           </div>
 
-          {/* Right Circle */}
           <div className="flex justify-center items-center">
             <div className="w-[400px] h-[400px] bg-white rounded-full shadow-2xl flex items-center justify-center">
               <Image src={image1} alt="image1"/>
