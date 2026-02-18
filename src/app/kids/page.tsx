@@ -16,6 +16,7 @@ import girl from '@/../public/girl.png'
 import BookForm from '../sections/homepage/BookForm'
 import FeaturedCourse from '../sections/homepage/FeaturedCourse'
 import FreeCourse from '../sections/homepage/FreeCourse'
+import GrainSection from '../sections/homepage/GrainSection'
 
 
 export default function page() {
@@ -69,6 +70,7 @@ export default function page() {
             <div className="bg-[#F6F6F6]">
                 <FreeCourse />
             </div>
+            <GrainSection />
             <WhyChoose />
             <Teachers />
             <OurMission />

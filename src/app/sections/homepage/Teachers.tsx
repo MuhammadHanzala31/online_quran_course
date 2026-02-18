@@ -14,7 +14,7 @@ export default function Teachers() {
             </div>
             <div className='flex lg:flex-row flex-col mx-auto max-w-[992px] gap-4'>
                 <TeacherBlock />
-                <TeacherBlock bgColor='bg-[#098A46]' textColor='text-white'/>
+                <TeacherBlock title='Female Tutors' description='Compassionate, qualified teachers offering respectful and supportive Quran learning for female learners.' bgColor='bg-[#098A46]' textColor='text-white'/>
             </div>
             <div className='flex lg:flex-row flex-col gap-13 mt-[100px]'>
                 <TeacherCard/>

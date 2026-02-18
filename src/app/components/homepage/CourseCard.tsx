@@ -1,9 +1,9 @@
 import Image from 'next/image'
 import React from 'react'
 import CourseCardImage from '../../../../public/course-card.png'
-export default function CourseCard({className} : {className? : string}) {
+export default function CourseCard({className, description, name} : {className? : string, description : string, name : string}) {
   return (
-    <div className='p-2 mx-2 shadow-lg border bg-white border-[#DADADA]'>
+    <div className='p-2 mx-2 h-[420px] shadow-lg border bg-white border-[#DADADA]'>
       <div className='relative'>
         <div className='absolute bg-white flex gap-2 items-center px-3.5 pt-2.5 shadow left-[23%] '>
             <span className='text-black font-poppins text-[12px] font-normal'>Ratings</span>
@@ -25,8 +25,8 @@ export default function CourseCard({className} : {className? : string}) {
             </div>
         </div>
          <div className='mt-3.5'>
-            <h4 className='text-black font-semibold font-poppins text-xl mb-3'>The Basics Of Islam Course​</h4>
-            <p className='text-[#535353] text-sm font-jakarta'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis impedit possimus</p>
+            <h4 className='text-black font-semibold font-poppins text-xl mb-3'>{name}​</h4>
+            <p className='text-[#535353] text-sm font-jakarta'>{description}​</p>
          </div>
          <div className='mt-4 flex items-baseline gap-2 justify-end'>
             <button className='bg-[#FFB706] px-2 py-1 rounded text-black font-poppins text-sm font-medium cursor-pointer'>Registeration</button>

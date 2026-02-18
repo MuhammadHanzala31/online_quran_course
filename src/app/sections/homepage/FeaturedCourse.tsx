@@ -53,6 +53,55 @@ export default function FeaturedCourse() {
   };
 
 
+  const courses = [
+  {
+    _id: 1,
+    name: "The Basics Of Islam Course",
+    description: "This course includes prayers, dua, memorization of surahs, and all necessary Islamic principles."
+  },
+  {
+    _id: 2,
+    name: "Basic Alphabets Course (Qaida)",
+    description: "This basic course focuses on teaching the Arabic alphabet along with essential tajweed rules."
+  },
+  {
+    _id: 3,
+    name: "Quran Reading Course",
+    description: "This course is designed to improve the skills of reading the holy Quran by combining words."
+  },
+  {
+    _id: 4,
+    name: "Tajweed Course",
+    description: "This Quran Reading Course is designed for those who know basic Arabic reading and want to learn Quranic Arabic."
+  },
+  {
+    _id: 5,
+    name: "Tarteel Course",
+    description: "This course is designed to improve fluency in reciting the holy Quran with rhythm."
+  },
+  {
+    _id: 6,
+    name: "Quran Memorization Course",
+    description: "Quran Memorization Course is designed to make the memorization process efficient and effective."
+  },
+  {
+    _id: 7,
+    name: "Quran Translation Course",
+    description: "The Quran Translation Course is designed to understand the Holy Quran and benefit from the words of Almighty Allah."
+  },
+  {
+    _id: 8,
+    name: "Tafseer ul Quran Course",
+    description: "This course involves a detailed explanation and interpretation of its verses, delving into various topics beyond mere translation."
+  },
+  {
+    _id: 9,
+    name: "Islamic Fiqh Course",
+    description: "This course is designed to understand Islamic jurisprudence, emphasizing the importance of adhering to divine orders."
+  }
+];
+
+
 
 
     return (
@@ -64,13 +113,7 @@ export default function FeaturedCourse() {
                 </div>
                 <div className='slider-container' data-aos="zoom-in-up">
                     <Slider {...settings}>
-                    <CourseCard />
-                    <CourseCard />
-                    <CourseCard />
-                    <CourseCard />
-                    <CourseCard />
-                    <CourseCard />
-                    <CourseCard />
+                    {courses && courses.map(course => (<CourseCard name={course.name} description={course.description}/> ))}
                     </Slider>
                 </div>
                 <div className='mt-[32px] flex gap-2 lg:w-2/3 w-full pr-2 '>
