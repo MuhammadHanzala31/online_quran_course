@@ -6,7 +6,7 @@ export interface card{
     image : any,
     title : string,
     description : string,
-    url : string
+    url? : string
 }
 
 export default function FreeCourseCard({image, title, description, url} : card) {
