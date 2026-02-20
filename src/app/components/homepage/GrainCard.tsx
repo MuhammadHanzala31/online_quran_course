@@ -1,5 +1,4 @@
 import React from 'react'
-import card1 from '@/../public/grain-card-1.png'
 import Image from 'next/image'
 export default function GrainCard({image, text, description} : {image? : any, text? : string, description? : string}) {
   return (

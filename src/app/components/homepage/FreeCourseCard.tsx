@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import FreeCourseImage from '@/../public/free_card.png'
+
 
 export interface card{
     image : any,

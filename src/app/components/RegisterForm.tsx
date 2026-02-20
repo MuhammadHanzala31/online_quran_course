@@ -17,7 +17,7 @@ export default function RegistrationForm() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log(formData);
-    alert("Form Submitted ✅");
+    alert("Form Submitted ");
   };
 
   return (

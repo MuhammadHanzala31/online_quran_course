@@ -36,7 +36,7 @@ export default function TeachersAccordians() {
   return (
     <main className="w-full">
       <section className="min-h-screen bg-gradient-to-r from-[#5BC05A] to-[#4CAF50] flex items-center justify-center px-6 py-20">
-        <div className="max-w-7xl w-full grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div className="max-w-[1330px] w-full grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           <div className="text-white space-y-8">
             <div className="space-y-4">
               <h1 className="font-poppins text-[36px] font-normal">Thorough Selection & Training Process</h1>
@@ -97,7 +97,6 @@ export default function TeachersAccordians() {
               ))}
             </div>
           </div>
-
           <div className="flex justify-center items-center">
             <div className="w-[400px] h-[400px] bg-white rounded-full shadow-2xl flex items-center justify-center">
               <Image src={image1} alt="image1"/>

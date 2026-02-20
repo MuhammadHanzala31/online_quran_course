@@ -17,7 +17,7 @@ export default function TrustSection() {
                 </div>
                 <div className='lg:w-1/2 w-full flex flex-col text-start gap-6'data-aos="zoom-in-left">
                     <h5 className='text-[16px] font-poppins font-medium text-shadow-black'>Guiding You on Your Quranic Journey</h5>
-                    <h3 className='text-4xl font-poppins font-medium leading-[115%]'>OQC Academy – Trusted  <span className='text-[#098A46]'> Online Quran Academy In USA </span></h3>
+                    <h3 className='text-4xl font-poppins font-medium leading-[115%]'>OQC Academy – Trusted  <span className='text-[#098A46]'> Online Quran Academy</span></h3>
                     <p className='text-[16px] font-poppins font-medium text-[#535353]'>
                         At OQC Academy, we are committed to helping students of all ages and backgrounds connect deeply with the Holy Quran. As a trusted online Quran academy in the USA, we combine experienced teachers, flexible schedules, and interactive lessons to make Quran learning accessible and engaging. Whether you’re starting from the basics or advancing your Tajweed, our goal is to guide you with care, patience, and dedication.
                     </p>
