@@ -73,13 +73,6 @@ export default function Navbar() {
     { label: "Quran in USA", href: "/usa" },
   ];
 
-  const usaOptions = [
-    { label: "Tarteel", href: "/usa/newyork" },
-    { label: "California", href: "/usa/california" },
-    { label: "Texas", href: "/usa/texas" },
-    { label: "Florida", href: "/usa/florida" },
-    { label: "Illinois", href: "/usa/illinois" },
-  ];
 
   return (
     <header>
@@ -104,13 +97,9 @@ export default function Navbar() {
             <Link href="/" className="relative">
               <Image src={Logo} alt="sorry" height={130} className="relative" />
             </Link>
-
-            {/* Desktop Menu */}
             <div className="hidden md:flex space-x-6">
               <Link href="/" className="hover:text-[#FFB706] text-[#098A46] font-medium font-poppins text-[18px]">Home</Link>
               <Link href="/about-us" className="hover:text-[#FFB706] text-[#098A46] font-medium font-poppins text-[18px]">About</Link>
-
-              {/* UK Mega Menu */}
               <div
                 className="relative group"
                 onMouseEnter={() => setOpenMegaMenu("uk")}
@@ -133,30 +122,11 @@ export default function Navbar() {
               </div>
 
               {/* USA Mega Menu */}
-              <div
-                className="relative group"
-                onMouseEnter={() => setOpenMegaMenu("usa")}
-                onMouseLeave={() => setOpenMegaMenu(null)}
-              >
-                <button className="hover:text-[#FFB706] text-[#098A46] font-medium font-poppins text-[18px] cursor-pointerx`">usa</button>
-                {openMegaMenu === "usa" && (
-                  <div className="absolute left-0 mt-0 bg-white shadow-lg rounded-md border border-gray-200 z-50">
-                    {usaOptions.map((option) => (
-                      <Link
-                        key={option.href}
-                        href={option.href}
-                        className="block px-4 py-2 text-[#098A46] hover:text-[#FFB706] hover:bg-gray-100 whitespace-nowrap"
-                      >
-                        {option.label}
-                      </Link>
-                    ))}
-                  </div>
-                )}
-              </div>
 
               <Link href="/contact-us" className="hover:text-[#FFB706] text-[#098A46] font-medium font-poppins text-[18px]">Contact</Link>
+              <Link href="/contact-us" className="hover:text-[#FFB706] text-[#098A46] font-medium font-poppins text-[18px]">Kids</Link>
               <Link href="/blogs" className="hover:text-[#FFB706] text-[#098A46] font-medium font-poppins text-[18px]">blogs</Link>
-              <Link href="/all-teachers" className="hover:text-[#FFB706] text-[#098A46] font-medium font-poppins text-[18px]">all Teachers</Link>
+              <Link href="/all-courses" className="hover:text-[#FFB706] text-[#098A46] font-medium font-poppins text-[18px]">all Courses</Link>
 
             </div>
 
