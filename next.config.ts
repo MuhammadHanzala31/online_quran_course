@@ -2,7 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
    images: {
-    domains: ["www.onlinequrancourse.com"],
+    domains: ["powderblue-cattle-168578.hostingersite.com"],
   },
   /* config options here */
 };

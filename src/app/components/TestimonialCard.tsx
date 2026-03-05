@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 export default function TestimonialCard({name, content, city} : any) {
     return (
-        <div className='hover:bg-[#FFB706] p-6 pt-2 relative bg-[#F7F7F7] transition-all' >
+        <div className='hover:bg-[#FFB706] border border-[#FFB706] p-6 pt-2 relative bg-[#F7F7F7] transition-all' >
             <Image src={quote} alt='quote' />
             <div className='mt-4 flex flex-col gap-2 mb-6'>
                 <h3 className='text-[22px] font-semibold font-poppins'>{name}</h3>
