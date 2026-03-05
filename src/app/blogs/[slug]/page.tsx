@@ -70,7 +70,7 @@ export default async function BlogPage({
 
 
   if (!post) {
-    notFound();
+    return  notFound();
   }
 
   const image =
