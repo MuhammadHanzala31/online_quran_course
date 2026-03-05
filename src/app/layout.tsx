@@ -34,6 +34,7 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Online Quran Course",
   description: "developed by zia khalid",
+  
 };
 
 export default function RootLayout({

@@ -241,6 +241,7 @@ clip-path: polygon(8% 0, 100% 0%, 93% 100%, 0% 100%);
     display: flex;
     justify-content: center;
     align-items: center;
+    border : 2px solid #FFB706
 }
 .testimonials-s .slick-prev {
     rotate: 180deg;

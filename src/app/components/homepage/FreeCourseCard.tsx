@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 
@@ -34,8 +35,7 @@ export default function FreeCourseCard({image, title, description, url} : card) 
                     </div>
                 </div>
                 <div className='mt-4 flex items-baseline gap-2 justify-end'>
-                    <button className='bg-[#FFB706] px-2 py-1 rounded text-black font-poppins text-sm font-medium cursor-pointer'>Registeration</button>
-                    <button className='bg-[#098A46] px-2 py-1 rounded text-white font-poppins text-sm font-medium cursor-pointer'>Learn more</button>
+                    <Link href={'/registration'} className='bg-[#FFB706] px-2 py-1 rounded text-black font-poppins text-sm font-medium cursor-pointer'>Registeration</Link>
                 </div>
             </div>
         </div>

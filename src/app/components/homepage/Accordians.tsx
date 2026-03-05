@@ -6,7 +6,7 @@ export default function Accordion({ title, content } : any) {
 
   return (
     <div
-      className={`rounded-md overflow-hidden transition-all duration-300 cursor-pointer ${
+      className={`rounded-none border border-[#098A46] overflow-hidden transition-all duration-300 cursor-pointer ${
         isOpen ? "bg-[#098A46] text-white" : "bg-white text-black"
       }`}
     >

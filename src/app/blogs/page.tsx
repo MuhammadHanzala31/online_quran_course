@@ -3,6 +3,7 @@ import BlogCard from "../components/blogs/BlogCard";
 import RecentBlogsCard from "../components/blogs/RecentBlogsCard";
 import BlogBanner from "../components/blogs/BlogBanner";
 import Image from "next/image";
+import Link from "next/link";
 
 type Post = {
   id: number;
@@ -15,7 +16,7 @@ type Post = {
 
 async function getPosts(): Promise<Post[]> {
   const res = await fetch(
-    "https://powderblue-cattle-168578.hostingersite.com/wp-json/wp/v2/posts?_embed&per_page=6&_fields=id,slug,title,excerpt,date,featured_media,_embedded",
+    "https://powderblue-cattle-168578.hostingersite.com/wp-json/wp/v2/posts?_embed&_fields=id,slug,title,excerpt,date,featured_media,_embedded",
     { next: { revalidate: 60 } }
   );
 
@@ -70,7 +71,7 @@ export default async function Page() {
             const markup = { __html: post.title.rendered }
 
             return (
-              <div
+              <Link href={`/blogs/${post.slug}`}
                 key={post.id}   // ✅ KEY ADDED
                 className="flex flex-col gap-4 items-center lg:flex-row"
               >
@@ -104,7 +105,7 @@ export default async function Page() {
                     {excerpt}...
                   </p>
                 </div>
-              </div>
+              </Link>
             );
           })}
         </div>

@@ -6,7 +6,6 @@ import { useState } from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import Logo from '@/../public/logo/Online Quran Logo Final.png'
-import Router from "next/router";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -45,14 +44,14 @@ export default function Navbar() {
       <div className="bg-[#098A46] py-3 ">
         <div className="flex justify-between items-center max-w-7xl mx-auto">
           <div className="flex gap-2 items-center">
-            <p className="text-lg font-medium font-poppins flex gap-1 items-center mb-2 text-white"><span className="text-[#FFB706] flex items-center gap-0.5"><i className="ri-phone-fill text-2xl"></i> USA </span> +17738002886</p>
-            <p className="text-lg font-medium font-poppins flex gap-1 items-center mb-2 text-white"><span className="text-[#FFB706] flex items-center gap-0.5"><i className="ri-phone-fill text-2xl"></i> UK </span> +442081231281</p>
-            <p className="text-lg font-medium font-poppins flex gap-1 items-center mb-2 text-white"><i className="ri-mail-line text-2xl text-[#FFB706]"></i> info@onlinequrancourse.com</p>
+            <Link href={'tel:+442081231281'} className="text-lg font-medium font-poppins flex gap-1 items-center mb-2 text-white"><span className="text-[#FFB706] flex items-center gap-0.5"><i className="ri-phone-fill text-2xl"></i> USA </span> +17738002886</Link>
+            <Link href={'tel:+17738002886'}  className="text-lg font-medium font-poppins flex gap-1 items-center mb-2 text-white"><span className="text-[#FFB706] flex items-center gap-0.5"><i className="ri-phone-fill text-2xl"></i> UK </span> +442081231281</Link>
+            <Link  href={'mailto:info@onlinequrancourse.com'} className="text-lg font-medium font-poppins flex gap-1 items-center mb-2 text-white"><i className="ri-mail-line text-2xl text-[#FFB706]"></i> info@onlinequrancourse.com</Link>
           </div>
           <div className="flex gap-2 items-center">
-            <Link href={'/'} className="h-8 w-8 flex justify-center items-center rounded-full bg-transparent border border-[#FFB706]"><i className="ri-facebook-fill text-[#FFB706] text-xl"></i></Link>
-            <Link href={'/'} className="h-8 w-8 flex justify-center items-center rounded-full bg-transparent border border-[#FFB706]"><i className="ri-twitter-x-line text-[#FFB706] text-xl"></i></Link>
-            <Link href={'/'} className="h-8 w-8 flex justify-center items-center rounded-full bg-transparent border border-[#FFB706]"><i className="ri-instagram-fill text-[#FFB706] text-xl"></i></Link>
+            <Link href={'/'} className="h-8 w-8 flex justify-center items-center rounded-none bg-transparent border border-[#FFB706]"><i className="ri-facebook-fill text-[#FFB706] text-xl"></i></Link>
+            <Link href={'/'} className="h-8 w-8 flex justify-center items-center rounded-none bg-transparent border border-[#FFB706]"><i className="ri-twitter-x-line text-[#FFB706] text-xl"></i></Link>
+            <Link href={'/'} className="h-8 w-8 flex justify-center items-center rounded-none bg-transparent border border-[#FFB706]"><i className="ri-instagram-fill text-[#FFB706] text-xl"></i></Link>
           </div>
         </div>
       </div>
@@ -73,9 +72,9 @@ export default function Navbar() {
                 <button className="hover:text-[#FFB706] text-[#098A46] font-medium font-poppins text-[18px] cursor-pointer">Courses</button>
                 {openMegaMenu === "courses" && (
                   <div className="absolute left-0 mt-0 bg-white shadow-lg border border-[#098a4565] z-50">
-                    {courses.map((option) => (
+                    {courses.map((option, idx) => (
                       <Link
-                        key={option.href}
+                        key={idx}
                         href={option.href}
                         className="block px-4 py-2 font-jakarta text-lg text-[#098A46] hover:text-[#FFB706] hover:bg-gray-100 whitespace-nowrap"
                       >
@@ -110,7 +109,7 @@ export default function Navbar() {
 
               {/* USA Mega Menu */}
 
-              <Link href="/blogs" className="hover:text-[#FFB706] text-[#098A46] font-medium font-poppins text-[18px]">blogs</Link>
+              <Link href="/blogs" className="hover:text-[#FFB706] text-[#098A46] font-medium font-poppins text-[18px]">Blogs</Link>
 
                     <div
                 className="relative group"
@@ -120,9 +119,9 @@ export default function Navbar() {
                 <button className="hover:text-[#FFB706] text-[#098A46] font-medium font-poppins text-[18px] cursor-pointerx`">Teachers</button>
                 {openMegaMenu === "teachers" && (
                   <div className="absolute left-0 mt-0 bg-white  shadow-lg  border border-gray-200 z-50">
-                    {teachers.map((option) => (
+                    {teachers.map((option, idx) => (
                       <Link
-                        key={option.href}
+                        key={idx}
                         href={option.href}
                         className="block px-4 py-2 font-jakarta text-[#098A46] hover:text-[#FFB706] hover:bg-gray-100 whitespace-nowrap"
                       >

@@ -2,24 +2,29 @@ import Accordion from "@/app/components/homepage/Accordians";
 import SectionLayout from "@/app/components/SectionLayout";
 import Image from "next/image";
 import React from "react";
-import image from '@/../public/f.png'
+import image from '@/../public/faq-new.jpg'
 
 export default function FaqsSection() {
   const faqData = [
     {
-      question: "What is Next.js?",
+      question: "Do the classes fit my schedule?",
       answer:
-        "Next.js is a React framework for building server-rendered and static web applications.",
+        "Yes. You pick the time that suits you best. Teachers are available 24 hours/day, 7 days/week.",
     },
     {
-      question: "Is Tailwind CSS good for Next.js?",
+      question: "Are these pre-recorded lessons?",
       answer:
-        "Yes! Tailwind CSS works seamlessly with Next.js and makes styling faster.",
+        "No. All lessons are live with a teacher.",
     },
     {
-      question: "How to use this accordion?",
+      question: "Where is your company located?",
       answer:
-        "Just import the Accordion component and pass title and content props.",
+        "We are an international company with teachers all around the world.",
+    },
+    {
+      question: "How do I start?",
+      answer:
+        "Just sign up and schedule your first lesson!",
     },
   ];
 
@@ -44,7 +49,7 @@ export default function FaqsSection() {
           <button className="text-[16px] font-poppins font-normal border border-[#098A46] cursor-pointer mt-14 text-white py-2.5 px-8 hover:bg-[#7AC043] transition-all hover:shadow-[3px_4px_4px_#098A46] bg-[#098A46] w-fit">
             Apply Now
           </button> */}
-          <Image src={image} alt="f-image"/>
+          <Image src={image} alt="f-image" height={'500'} width={'400'} className="rounded"/>
         </div>
 
         {/* Right Accordion */}

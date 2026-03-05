@@ -15,7 +15,7 @@ export default function TrustSection() {
                         <Image src={Second2} alt='second-2' className='absolute right-5 -bottom-15 rounded-tr-[100px] rounded-bl-[100px] shadow-2xl upAndDown' />
                     </div>
                 </div>
-                <div className='lg:w-1/2 w-full flex flex-col text-start gap-6'data-aos="zoom-in-left">
+                <div className='lg:w-1/2 w-full flex flex-col text-start gap-6' data-aos="zoom-in-left">
                     <h5 className='text-[16px] font-poppins font-medium text-shadow-black'>Guiding You on Your Quranic Journey</h5>
                     <h3 className='text-4xl font-poppins font-medium leading-[115%]'>OQC Academy – Trusted  <span className='text-[#098A46]'> Online Quran Academy</span></h3>
                     <p className='text-[16px] font-poppins font-medium text-[#535353]'>

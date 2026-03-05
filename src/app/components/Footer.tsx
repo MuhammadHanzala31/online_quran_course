@@ -34,18 +34,18 @@ export default function Footer() {
         {/* Column 3 */}
         <div>
           <h3 className="text-3xl font-bold font-jakarta mb-6">Contact</h3>
-          <p className="text-lg font-medium font-poppins flex gap-1 items-center mb-2"><i className="ri-mail-line text-2xl text-[#FFB706]"></i> info@onlinequrancourse.com</p>
-          <p className="text-lg font-medium font-poppins flex gap-1 items-center mb-2"><span className="text-[#FFB706] flex items-center gap-0.5"><i className="ri-phone-fill text-2xl"></i> UK </span> +442081231281</p>
-          <p className="text-lg font-medium font-poppins flex gap-1 items-center mb-2"><span className="text-[#FFB706] flex items-center gap-0.5"><i className="ri-phone-fill text-2xl"></i> USA </span> +17738002886</p>
+          <Link href={'mailto:info@onlinequrancourse.com'} className="text-lg font-medium font-poppins flex gap-1 items-center mb-2 hover:text-[#FFB706]"><i className="ri-mail-line text-2xl text-[#FFB706]"></i> info@onlinequrancourse.com</Link>
+          <Link href={'tel:+442081231281'} className="text-lg font-medium font-poppins flex gap-1 items-center mb-2 hover:text-[#FFB706]"><span className="text-[#FFB706] flex items-center gap-0.5"><i className="ri-phone-fill text-2xl"></i> UK </span> +442081231281</Link>
+          <Link href={'tel:+17738002886'} className="text-lg font-medium font-poppins flex gap-1 items-center mb-2 hover:text-[#FFB706]"><span className="text-[#FFB706] flex items-center gap-0.5"><i className="ri-phone-fill text-2xl"></i> USA </span> +17738002886</Link>
 
         </div>
         <div>
           <h3 className="text-3xl font-bold font-jakarta mb-6">Latest Posts</h3>
-          <p className="text-lg font-medium font-poppins flex gap-1 items-center mb-2">Hifz Teachers</p>
-          <p className="text-lg font-medium font-poppins flex gap-1 items-center mb-2"> Quran Memorization for Men</p>
-          <p className="text-lg font-medium font-poppins flex gap-1 items-center mb-2"> Quran Hifz Classes for Sisters</p>
-          <p className="text-lg font-medium font-poppins flex gap-1 items-center mb-2"> Online Quran Memorization Courses for Adults</p>
-
+          <Link href={'/blogs/salah-link-with-allah'} className="text-lg font-medium font-poppins flex gap-1 items-center mb-2 hover:text-[#FFB706]">Salah Link with Allah</Link>
+          <Link href={'/blogs/reading-quran'} className="text-lg font-medium font-poppins flex gap-1 items-center mb-2 hover:text-[#FFB706]">Reading Quran</Link>
+          <Link href={'/blogs/salah-wipes-away-sins'} className="text-lg font-medium font-poppins flex gap-1 items-center mb-2 hover:text-[#FFB706]">Salah Wipes Any Sins</Link>
+          <Link href={'/blogs/sahaba-kiram-رضوان-اللہ'} className="text-lg font-medium font-poppins flex gap-1 items-center mb-2 hover:text-[#FFB706]">Sahaba Kiram</Link>
+        
         </div>
       </div>
 
