@@ -15,9 +15,9 @@ export default function Hero() {
           className="lg:w-1/2 w-full flex flex-col gap text-center lg:text-left"
           data-aos="fade-up-right"
         >
-          <h5 className="text-sm sm:text-base md:text-lg font-poppins font-normal text-shadow-black">
+          {/* <h5 className="text-sm sm:text-base md:text-lg font-poppins font-normal text-shadow-black">
             Lorem Ipsum is simply dummy text of the printing
-          </h5>
+          </h5> */}
 
           <h1 className="text-shadow-black font-jakarta text-2xl sm:text-3xl md:text-4xl lg:text-[44px] font-bold leading-[140%] relative inline-block">
             Learn{" "}

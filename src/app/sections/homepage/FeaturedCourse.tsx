@@ -57,31 +57,37 @@ export default function FeaturedCourse() {
   {
     _id: 1,
     name: "The Basics Of Islam Course",
+    url : '/basic-islamic',
     description: "This course includes prayers, dua, memorization of surahs, and all necessary Islamic principles."
   },
   {
     _id: 2,
     name: "Basic Alphabets Course (Qaida)",
+    url : '/basic-alphabets',
     description: "This basic course focuses on teaching the Arabic alphabet along with essential tajweed rules."
   },
   {
     _id: 3,
     name: "Quran Reading Course",
+    url : '/quran-recitation',
     description: "This course is designed to improve the skills of reading the holy Quran by combining words."
   },
   {
     _id: 4,
     name: "Tajweed Course",
+    url : '/online-tajweed',
     description: "This Quran Reading Course is designed for those who know basic Arabic reading and want to learn Quranic Arabic."
   },
   {
     _id: 5,
     name: "Tarteel Course",
+    url : 'online-tarteel',
     description: "This course is designed to improve fluency in reciting the holy Quran with rhythm."
   },
   {
     _id: 6,
     name: "Quran Memorization Course",
+    url : '/quran-memorization',
     description: "Quran Memorization Course is designed to make the memorization process efficient and effective."
   },
   {
@@ -92,11 +98,13 @@ export default function FeaturedCourse() {
   {
     _id: 8,
     name: "Tafseer ul Quran Course",
+    url : '/tafseer-ul-quran',
     description: "This course involves a detailed explanation and interpretation of its verses, delving into various topics beyond mere translation."
   },
   {
     _id: 9,
     name: "Islamic Fiqh Course",
+    url : '/islamic-fiqh',
     description: "This course is designed to understand Islamic jurisprudence, emphasizing the importance of adhering to divine orders."
   }
 ];
@@ -113,7 +121,7 @@ export default function FeaturedCourse() {
                 </div>
                 <div className='slider-container' data-aos="zoom-in-up">
                     <Slider {...settings}>
-                    {courses && courses.map(course => (<CourseCard name={course.name} description={course.description}/> ))}
+                    {courses && courses.map(course => (<CourseCard name={course.name} description={course.description} url={course.url}/>  ))}
                     </Slider>
                 </div>
                 <div className='mt-[32px] flex gap-2 lg:w-2/3 w-full pr-2 '>

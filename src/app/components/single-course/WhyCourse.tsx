@@ -15,7 +15,7 @@ export default function WhyCourse() {
                     <h1 className='text-black font-medium font-poppins text-[36px] '>Why Take This Course</h1>
                     <p className='text-black font-normal text-[16px] font-poppins'>Lorem Ipsum is simply dummy text of the printing Lorem Ipsum is simply dummy text of the printing Lorem Ipsum is simply dummy text of the printing  Lorem Ipsum is simply dummy.</p>
                 </div>
-                <Faq />
+                {/* <Faq /> */}
             </div>
             <div className='w-1/2'>
                 <Image src={blank} alt='sorry' />

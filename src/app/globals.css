@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+body{
+  overflow-x: hidden !important;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -193,6 +197,22 @@ clip-path: polygon(8% 0, 100% 0%, 93% 100%, 0% 100%);
   background-repeat: no-repeat;
 
 }
+.mt {
+  background-image: url(../../public/mt.png);
+  background-size: cover;
+  background-position: right top;
+  background-repeat: no-repeat;
+  height: 550px;
+
+}
+.fmt {
+  background-image: url(../../public/fmt.png);
+  background-size: cover;
+  background-position: right top;
+  background-repeat: no-repeat;
+  height: 550px;
+
+}
 .single-banner {
   background-image: url(../../public/single-bg.png);
   background-size: covertain;
@@ -208,8 +228,8 @@ clip-path: polygon(8% 0, 100% 0%, 93% 100%, 0% 100%);
     border: none;
     border-radius: 9999px;
     outline: none;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     padding: 0;
     font-size: 0;
     font-weight: 900;
@@ -218,7 +238,9 @@ clip-path: polygon(8% 0, 100% 0%, 93% 100%, 0% 100%);
     position: absolute;
     top: 100%;
     transform: translate(0, -50%);
-    box-shadow: 0 0 18px #0a0a0a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .testimonials-s .slick-prev {
     rotate: 180deg;
@@ -243,7 +265,7 @@ clip-path: polygon(8% 0, 100% 0%, 93% 100%, 0% 100%);
 .testimonials-s{
   position: relative;
 }
-.testimonials-s::before,
+/* .testimonials-s::before,
 .testimonials-s::after {
   content: " ";
   height: 2px;
@@ -254,16 +276,16 @@ clip-path: polygon(8% 0, 100% 0%, 93% 100%, 0% 100%);
   z-index:99999;
   top:350px;
 }
-.testimonials-s .slick-next:before, .testimonials-s .slick-prev:before{
-  color: #000 !important;
-}
 
 .testimonials-s::before{
   left: 1%;
-}
-.testimonials-s::after{
-  right: 1%;
-}
+  }
+  .testimonials-s::after{
+    right: 1%;
+    } */
+    .testimonials-s .slick-next:before, .testimonials-s .slick-prev:before{
+      color: #000 !important;
+    }
 .r-form{
   background-image: url(../../public/form-bg.png);
   background-position:  calc(43%);

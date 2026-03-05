@@ -16,31 +16,82 @@ import FreeCourse from '../sections/homepage/FreeCourse'
 import GrainSection from '../sections/homepage/GrainSection'
 
 export default function page() {
+
+  const courses = [
+    {
+      _id: 1,
+      name: "The Basics Of Islam Course",
+      description: "This course includes prayers, dua, memorization of surahs, and all necessary Islamic principles."
+    },
+    {
+      _id: 2,
+      name: "Basic Alphabets Course (Qaida)",
+      description: "This basic course focuses on teaching the Arabic alphabet along with essential tajweed rules."
+    },
+    {
+      _id: 3,
+      name: "Quran Reading Course",
+      description: "This course is designed to improve the skills of reading the holy Quran by combining words."
+    },
+    {
+      _id: 4,
+      name: "Tajweed Course",
+      description: "This Quran Reading Course is designed for those who know basic Arabic reading and want to learn Quranic Arabic."
+    },
+    {
+      _id: 5,
+      name: "Tarteel Course",
+      description: "This course is designed to improve fluency in reciting the holy Quran with rhythm."
+    },
+    {
+      _id: 6,
+      name: "Quran Memorization Course",
+      description: "Quran Memorization Course is designed to make the memorization process efficient and effective."
+    },
+    {
+      _id: 7,
+      name: "Quran Translation Course",
+      description: "The Quran Translation Course is designed to understand the Holy Quran and benefit from the words of Almighty Allah."
+    },
+    {
+      _id: 8,
+      name: "Tafseer ul Quran Course",
+      description: "This course involves a detailed explanation and interpretation of its verses, delving into various topics beyond mere translation."
+    },
+    {
+      _id: 9,
+      name: "Islamic Fiqh Course",
+      description: "This course is designed to understand Islamic jurisprudence, emphasizing the importance of adhering to divine orders."
+    }
+  ];
+
+
   return (
     <div>
       <SectionLayout>
         <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-10 lg:gap-0">
           {/* LEFT CONTENT */}
           <div
-            className="lg:w-1/2 w-full flex flex-col gap-4 text-center lg:text-left"
+            className="lg:w-1/2 w-full flex flex-col gap text-center lg:text-left"
             data-aos="fade-up-right"
           >
             <h5 className="text-sm sm:text-base md:text-lg font-poppins font-normal text-shadow-black">
-              Lorem Ipsum is simply dummy text of the printing
+              Start Your Spiritual Journey with OQC Institute’s Online Quran Courses
             </h5>
 
-            <h1 className="text-shadow-black font-jakarta text-2xl sm:text-3xl md:text-4xl lg:text-[64px] font-bold leading-[140%] relative inline-block">
-              Lorem Ipsum is simply dummy text of the
+            <h1 className="text-shadow-black font-jakarta text-2xl sm:text-3xl md:text-4xl lg:text-[60px] font-bold leading-[140%] relative inline-block">
+              Online <span className='text-[#098A46]'>Quran</span> Courses
             </h1>
 
-            <p className="text-sm sm:text-base md:text-lg mt-3 font-poppins font-normal text-[#535353] max-w-[90%] md:max-w-[80%] lg:max-w-[70%] mx-auto lg:mx-0">
-              Lorem Ipsum is simply dummy text of the printing Ipsum is
-              simply dummy text of the printing Lorem Ipsum is simply dummy text
-              of the printingadadadadadadada
+            <p className="text-sm sm:text-base md:text-lg mt-3 font-poppins font-normal text-[#535353] max-w-[90%] md:max-w-[80%] lg:max-w-[95%] mx-auto lg:mx-0">
+              Begin your path to Quranic knowledge with OQC Institute’s Online Quran Courses, carefully designed to bring authentic Islamic education to your home. Whether you’re starting from the basics or advancing your Quranic understanding, our comprehensive curriculum covers everything — from learning the Arabic alphabet to mastering Tajweed, Tafseer, and Fiqh.
             </p>
 
+            <p className="text-sm sm:text-base md:text-lg mt-3 font-poppins font-normal text-[#535353] max-w-[90%] md:max-w-[80%] lg:max-w-[95%] mx-auto lg:mx-0">
+              With flexible class timings, personalized one-on-one lessons, and expert teachers, learning the Quran online has never been this accessible and engaging. Thousands of students around the world have already deepened their connection with the Quran through our structured, easy-to-follow courses. Start your journey today with complete confidence — backed by our 100% money-back guarantee for your satisfaction.            </p>
+
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 items-center mt-4 justify-center lg:justify-start">
-              <button className="text-sm sm:text-base md:text-lg font-poppins border border-[#098A46] cursor-pointer text-white py-2.5 px-6 sm:px-8 hover:bg-[#7AC043] transition-all hover:shadow-[3px_4px_4px_#098A46] bg-[#098A46] rounded-md">
+              <button className="text-sm sm:text-base md:text-lg font-poppins border border-[#098A46] cursor-pointer text-white py-2.5 px-6 sm:px-8 hover:bg-[#7AC043] transition-all hover:shadow-[3px_4px_4px_#098A46] bg-[#098A46]">
                 Get Enrolled Now
               </button>
             </div>
@@ -60,16 +111,13 @@ export default function page() {
       </SectionLayout>
       <SectionLayout>
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 space-x-3 space-y-3'>
-          <SingleCourseCard />
-          <SingleCourseCard />
-          <SingleCourseCard />
-          <SingleCourseCard />
-          <SingleCourseCard />
+          {courses && courses.map(course => (<SingleCourseCard key={course._id} name={course.name} description={course.description} />))}
+
         </div>
       </SectionLayout>
       <StepsSection />
       <BookForm />
-      <FeaturedCourse />
+      {/* <FeaturedCourse /> */}
       <div className="bg-[#F6F6F6]">
         <FreeCourse />
       </div>
