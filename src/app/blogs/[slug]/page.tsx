@@ -20,7 +20,7 @@ async function getPost(slug: string): Promise<Post> {
   );
 
   if (!res.ok) {
-    throw new Error("Failed to fetch post");
+    console.log("Failed to fetch post");
   }
 
   const posts = await res.json();
@@ -38,7 +38,7 @@ async function getAllPosts(): Promise<Post[]> {
   );
 
   if (!res.ok) {
-    throw new Error("Failed to fetch posts");
+    console.log("Failed to fetch posts");
   }
 
   return res.json();
@@ -288,3 +288,4 @@ export default async function BlogPage({
 //     </div>
 //   );
 // }
+
