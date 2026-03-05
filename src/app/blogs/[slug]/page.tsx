@@ -25,7 +25,7 @@ async function getPost(slug: string): Promise<Post> {
 
   const posts = await res.json();
   if (posts.length === 0) {
-    throw new Error("Post not found");
+    console.log('post not found')
   }
 
   return posts[0];
