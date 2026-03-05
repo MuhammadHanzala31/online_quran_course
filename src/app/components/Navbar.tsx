@@ -20,8 +20,7 @@ export default function Navbar() {
   ];
 
   const teachers = [
-    { label: "All Teachers", href: "/all-teachers" },
-    { label: "female Teachers", href: "/female-teacher" },
+    { label: "Female Teachers", href: "/female-teacher" },
     { label: "Male Teachers", href: "/female-teacher" },
   ];
   const courses = [
@@ -69,7 +68,7 @@ export default function Navbar() {
                 onMouseEnter={() => setOpenMegaMenu("courses")}
                 onMouseLeave={() => setOpenMegaMenu(null)}
               >
-                <button className="hover:text-[#FFB706] text-[#098A46] font-medium font-poppins text-[18px] cursor-pointer">Courses</button>
+                <Link href={'/all-courses'} className="hover:text-[#FFB706] text-[#098A46] font-medium font-poppins text-[18px] cursor-pointer">Courses</Link>
                 {openMegaMenu === "courses" && (
                   <div className="absolute left-0 mt-0 bg-white shadow-lg border border-[#098a4565] z-50">
                     {courses.map((option, idx) => (
@@ -116,7 +115,7 @@ export default function Navbar() {
                 onMouseEnter={() => setOpenMegaMenu("teachers")}
                 onMouseLeave={() => setOpenMegaMenu(null)}
               >
-                <button className="hover:text-[#FFB706] text-[#098A46] font-medium font-poppins text-[18px] cursor-pointerx`">Teachers</button>
+                <Link href={'/all-teachers'} className="hover:text-[#FFB706] text-[#098A46] font-medium font-poppins text-[18px] cursor-pointerx`">Teachers</Link>
                 {openMegaMenu === "teachers" && (
                   <div className="absolute left-0 mt-0 bg-white  shadow-lg  border border-gray-200 z-50">
                     {teachers.map((option, idx) => (
