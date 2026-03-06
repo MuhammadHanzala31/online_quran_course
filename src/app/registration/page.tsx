@@ -46,7 +46,7 @@ export default function page() {
                     </div>
 
                     {/* Right Side - Form */}
-                    <div className="bg-white rounded-none w-[90%]  shadow-lg p-8 border border-[#098A46]">
+                    <div className="bg-white rounded-none w-[90%]  shadow-2xl shadow-[#098A46] p-8 border border-[#098A46]">
                         <h2 className="text-2xl text-center font-sans font-bold text-[#098A46] mb-4">
                             Start Your Free Trial Lesson Now.
                         </h2>

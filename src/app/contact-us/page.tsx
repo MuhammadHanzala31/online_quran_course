@@ -47,13 +47,13 @@ export default function page() {
       <div className='h-[409px] contact-hero flex justify-between items-center'>
         <div className='flex text-center flex-col max-w-[688px] mx-auto w-full gap-6'>
           <h1 className='text-white  w-full text-center font-poppins text-5xl font-medium'>Contact us</h1>
-          <p className='text-center font-poppins text-white text-[16px]'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the</p>
+          <p className='text-center font-poppins text-white text-[16px]'>Have questions about our online Quran classes? The team at Online Quran Course is here to help. Reach out to us anytime to learn more about our courses, schedules, and enrollment. We’re happy to guide you</p>
         </div>
       </div>
       <SectionLayout>
         <div className='flex flex-col gap-6 max-w-[992px] w-full mx-auto'>
-          <h4 className='text-[#098A46] font-poppins text-[32px] font-medium text-center'>Our Plan For Individual Courses</h4>
-          <p className='font-poppins text-[#535353] text-[16px] font-normal text-center'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the</p>
+          <h4 className='text-[#098A46] font-poppins text-[32px] font-medium text-center'>Personalized Learning Approach For Individuals</h4>
+          <p className='font-poppins text-[#535353] text-[16px] font-normal text-center'>At Online Quran Course, we offer personalized one-on-one classes tailored to each student’s pace and level. Whether learning Quran reading, Tajweed, or Tafseer, our expert teachers design lessons to ensure effective understanding, spiritual growth, and a meaningful connection with the Holy Quran.</p>
         </div>
         <div className='flex flex-row items-center gap-8 max-w-[992px] w-full mx-auto lg:mt-[81px] mt-8'>
           <div className='flex flex-col gap-3 lg:w-1/2 w-full'>
@@ -82,25 +82,22 @@ export default function page() {
               Sign up today
             </button>
           </div>
-          <div className='flex flex-col gap-4 lg:w-1/2 w-full'>
-            <h2 className='text-black font-poppins text-3xl font-medium'>Verse By Verse Learn Quran With US</h2>
-            <p className='font-poppins text-[#535353] text-[16px] font-normal'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the Lorem Ipsum is simply dummy text of the printing and </p>
+          <div className='flex flex-col gap-2 lg:w-1/2 w-full'>
+            <h2 className='text-black font-poppins text-3xl font-medium'>Get In Touch with Our Support Team</h2>
+            <p className='font-poppins text-[#535353] text-[16px] font-normal'>Connect with the Support Team at Online Quran Course to learn more about our online Quran classes. Our staff is here to assist you with course details, schedules, and enrollment, ensuring a smooth and personalized learning experience for every student.</p>
+            <p className='font-poppins text-[#535353] text-[16px] font-normal'>Reach out with any questions or to discuss course options:</p>
             <ul className='mt-2 flex flex-col gap-3'>
               <li className='flex gap-2 items-center'>
-                <i className="ri-map-pin-line text-lg text-[#098A46] "></i>
-                <p className='font-poppins text-[#535353] text-[16px] font-normal'>Lorem Ipsum is simply dummy text of the printing </p>
-              </li>
-              <li className='flex gap-2 items-center'>
-                <i className="ri-map-pin-line text-lg text-[#098A46] "></i>
-                <p className='font-poppins text-[#535353] text-[16px] font-normal'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                <i className="ri-mail-line text-lg text-[#098A46] "></i>
+                <p className='font-poppins text-[#535353] text-[16px] font-normal'>info@onlinequrancourse.com</p>
               </li>
               <li className='flex gap-2 items-center'>
                 <i className="ri-phone-line text-lg text-[#098A46] "></i>
                 <p className='font-poppins text-[#535353] text-[16px] font-normal'><span className='font-bold'>Uk : </span> +44 2071 931528</p>
               </li>
               <li className='flex gap-2 items-center'>
-                <i className="ri-team-fill text-lg text-[#098A46] "></i>
-                <p className='font-poppins text-[#535353] text-[16px] font-normal'>Lorem Ipsum is simply</p>
+                <i className="ri-phone-line text-lg text-[#098A46] "></i>
+                <p className='font-poppins text-[#535353] text-[16px] font-normal'><span className='font-bold'>USA : </span> +17738002886</p>
               </li>
             </ul>
           </div>
@@ -110,7 +107,7 @@ export default function page() {
         <h4 className='text-[#098A46] font-poppins text-[32px] font-medium text-center my-14'>Our Testimonial</h4>
         <div className='grid grid-cols-1 lg:grid-cols-3 space-x-7 space-y-7'>
           {
-            testimonials?.map(testi => (<TestimonialCard content={testi.review} city={testi.country} name={testi.name}/>))
+            testimonials?.map(testi => (<TestimonialCard key={testi.name} content={testi.review} city={testi.country} name={testi.name}/>))
           }
         </div>
       </SectionLayout>
