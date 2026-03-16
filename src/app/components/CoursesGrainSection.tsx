@@ -21,69 +21,63 @@ export default function CoursesGrainSection() {
         image?: any;
     }
 
+    
     const quranLearningBenefits: QuranLearningBenefit[] = [
         {
             id: 1,
-            title: "Spiritual Growth",
+            title: "1-on-1 Classes",
             description:
-                "Strengthen your connection with Allah by understanding His words deeply, developing piety, and gaining inner peace through regular Quran study from home.",
+                "Personalized Quran sessions with dedicated teachers for every student.",
             image: Grain1,
         },
         {
             id: 2,
-            title: "Tajweed Mastery",
+            title: "Female Quran Teachers",
             description:
-                "Learn proper Quranic pronunciation with expert guidance, ensuring accurate recitation while preserving the beauty and authenticity of the Holy Quran.",
+                "Qualified female tutors available for our sisters and daughters.",
             image: Grain2,
         },
         {
             id: 3,
-            title: "Flexible Learning",
+            title: "Adjustable Timings",
             description:
-                "Enjoy personalized class schedules that fit your lifestyle, allowing you to balance Quran learning with work, school, and family responsibilities.",
+                "Set your class schedule according to your convenience.",
             image: Grain3,
         },
         {
             id: 4,
-            title: "Qualified Teachers",
+            title: "No Language Barrier",
             description:
-                "Benefit from experienced, certified Quran tutors who provide structured, engaging, and effective lessons tailored to your learning pace and needs.",
+                "We teach in Arabic, English, Urdu, and other commonly spoken languages.",
             image: Grain4,
         },
         {
             id: 5,
-            title: "Safe Environment",
+            title: "Anywhere, Any Device",
             description:
-                "Study from home in a comfortable and secure setting, especially beneficial for children and families seeking trustworthy Quran education.",
+                "Join classes on your phone, tablet, or computer — anytime, anywhere.",
             image: Grain5,
         },
         {
             id: 6,
-            title: "Cultural Relevance",
+            title: "Course Certificate",
             description:
-                "Learn with instructors who understand Islamic values in the American context, ensuring lessons resonate with your environment and daily challenges.",
+                "Receive an official certificate from OQC Institute upon course completion.",
             image: Grain6,
         },
         {
             id: 7,
-            title: "Affordable Access",
+            title: "Free Trial Classes",
             description:
-                "Gain high-quality Quran education at reasonable fees, making spiritual learning accessible to individuals and families across the USA.",
+                "Experience our teaching style before enrollment with a free demo.",
             image: Grain7,
         },
         {
             id: 8,
-            title: "Consistent Progress",
+            title: "24/7 Helpdesk",
             description:
-                "Track your learning journey with structured plans, regular assessments, and continuous feedback to achieve steady improvement in recitation and comprehension.",
+                "Dedicated support team available anytime for students and parents.",
             image: Grain8,
-        },
-        {
-            id: 9,
-            title: "Community Connection",
-            description:
-                "Join a network of fellow learners, participate in group sessions, and share experiences, fostering a sense of unity and encouragement in your Quran learning journey.",
-            image: Grain9,
         },
     ];
 
@@ -93,7 +87,7 @@ export default function CoursesGrainSection() {
                 <h5 className='text-4xl font-poppins font-medium max-w-[614px] mx-auto'> Gains From Learning  <span className='text-[#098A46]'>Quran Online in USA</span></h5>
                 <p className='text-[#535353] text-[16px] font-poppins mx-auto font-medium max-w-[614px]'>Learning the Quran online in the USA offers flexibility, personalized attention, and access to qualified tutors. Students can progress at their own pace, strengthen their recitation, deepen understanding, and apply Islamic teachings in everyday life.</p>
             </div>
-            <div className='grid grid-cols-3 mt-4 space-x-[47px] space-y-2'>
+            <div className='grid grid-cols-3 mt-4 justify-center space-x-[47px] space-y-2'>
                 {
                     quranLearningBenefits.map( grain => 
                         (<GrainCard 

@@ -3,22 +3,22 @@ import Link from 'next/link'
 import React from 'react'
 
 
-export interface card{
-    image : any,
-    title : string,
-    description : string,
-    url? : string
+export interface card {
+    image: any,
+    title: string,
+    description: string,
+    url?: string
 }
 
-export default function FreeCourseCard({image, title, description, url} : card) {
+export default function FreeCourseCard({ image, title, description, url }: card) {
     return (
         <div className='bg-white shadow p-2.5 flex lg:flex-row flex-col gap-2 border border-[#DADADA] justify-center'>
             <Image src={image} alt='card_image' />
-            <div className='flex flex-col gap-6'>
+            <div className='flex flex-col gap-2'>
                 <div className='flex justify-items-start'>
-                    <div className='bg-[#F0F0F0] p-1 px-2 text-black flex gap-2 shadow-lg font-poppins text-sm  font-medium'>
-                        <i className="ri-presentation-line"></i>
-                        <span>Experts</span>
+                    <div className='bg-[#F0F0F0] p-1 px-2 text-black flex gap-2 justify-end shadow-lg font-poppins text-sm  font-medium'>
+                        <i className="ri-time-line"></i>
+                        <span>2 weeks</span>
                     </div>
                 </div>
                 <h4 className='text-black font-semibold font-poppins text-xl'>{title}</h4>
@@ -34,7 +34,7 @@ export default function FreeCourseCard({image, title, description, url} : card) 
                         <span>Studnets</span>
                     </div>
                 </div>
-                <div className='mt-4 flex items-baseline gap-2 justify-end'>
+                <div className='mt-2 flex items-baseline gap-2 justify-end'>
                     <Link href={'/registration'} className='bg-[#FFB706] px-2 py-1 rounded text-black font-poppins text-sm font-medium cursor-pointer'>Registeration</Link>
                 </div>
             </div>

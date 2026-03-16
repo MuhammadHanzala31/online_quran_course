@@ -12,15 +12,15 @@ export default function Accordion({ title, content } : any) {
     >
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="w-full flex justify-between items-center p-4 font-poppins font-medium text-left"
+        className={`w-full flex justify-between items-center p-4 font-poppins font-medium text-left ${isOpen ? 'border-b-2 border-white' : null}`}
       >
-        <span>{title}</span>
-        <span className="text-2xl font-bold">
+        <span className="font-bold">{title}</span>
+        <span className={`text-2xl font-bold  ${isOpen ? 'bg-white text text-[#098A46] h-8 w-8 flex justify-center items-center rounded-full' : ''}`}>
           {isOpen ? "−" : "+"}
         </span>
       </button>
       {isOpen && (
-        <div className="px-4 pb-4 text-sm font-poppins leading-relaxed">
+        <div className="px-4 pb-4 mt-2 text-sm font-poppins leading-relaxed">
           {content}
         </div>
       )}

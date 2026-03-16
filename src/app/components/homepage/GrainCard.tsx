@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 export default function GrainCard({image, text, description} : {image? : any, text? : string, description? : string}) {
   return (
-    <div className='relative p-7 pl-12 bg-[#F6F6F6] border-l-4 border-[#098A46] shadow-xl skew-x-[-9deg]'>
+    <div className='relative p-2 pl-12 bg-[#F6F6F6] border-l-4 border-[#098A46] shadow-xl skew-x-[-9deg]'>
         <div className='absolute top-[35%] -left-10'>
             <Image src={image} alt='grain' />
         </div>

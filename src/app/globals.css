@@ -295,4 +295,36 @@ clip-path: polygon(8% 0, 100% 0%, 93% 100%, 0% 100%);
 }
 
 
+.testi{
+  height: 100px;
+  overflow-y: auto;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
 
+/* width */
+.testi::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* track hide */
+.testi::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* thumb */
+.testi::-webkit-scrollbar-thumb {
+  background: #000;
+  border-radius: 10px;
+}
+
+/* hover optional */
+.testi::-webkit-scrollbar-thumb:hover {
+  background: transparent
+}
+
+/* Firefox */
+.testi{
+  scrollbar-width: thin;
+  scrollbar-color: #000 transparent;
+}

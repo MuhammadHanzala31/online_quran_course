@@ -31,7 +31,7 @@ export default function StepsSection() {
 
     return (
         <SectionLayout >
-            <div className='mb-[50px] flex flex-col gap-6 text-center' >
+            <div className='mb-[50px] flex flex-col gap-6 text-center lg:pt-7 pt-9 ' >
                 <h5 className='text-4xl font-poppins font-medium'><span className='text-[#098A46]'>3</span> Easy Steps To <span className='text-[#098A46]'> Learn Quran Online!</span></h5>
                 <p className='text-[#535353] text-[16px] font-poppins font-medium'>Start Online Quran Learning In USA</p>
             </div>

@@ -21,6 +21,9 @@ import SliderTestimonial from '@/app/sections/homepage/SliderTestimonial'
 import blank from '@/../public/Rectangle 295.png'
 import Faq from '@/app/components/single-course/Faq'
 import RequestForm from '@/app/components/homepage/RequestForm'
+import BookForm from '@/app/sections/homepage/BookForm'
+import WhyChoose from '@/app/sections/homepage/WhyChoose'
+import LmsSection from '@/app/components/LmsSection'
 
 
 
@@ -153,6 +156,7 @@ export default async function Page({ params }:
                 </div>
             </SectionLayout>
             <StepsSection />
+            <BookForm />
             <SectionLayout>
                 <div className='lg:w-1/2 w-full flex flex-col gap-4 mb-6'>
                     <h1 className='text-black font-medium font-poppins text-[36px] '>More About this course</h1>
@@ -203,6 +207,8 @@ export default async function Page({ params }:
                     </div>
                 </div>
             </SectionLayout>
+            <WhyChoose />
+            <LmsSection />
             <SliderTestimonial />
             <FaqsSection />
         </main>

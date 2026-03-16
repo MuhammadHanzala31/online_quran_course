@@ -14,6 +14,9 @@ import BookForm from '../sections/homepage/BookForm'
 import FeaturedCourse from '../sections/homepage/FeaturedCourse'
 import FreeCourse from '../sections/homepage/FreeCourse'
 import GrainSection from '../sections/homepage/GrainSection'
+import Link from 'next/link'
+import CoursesGrainSection from '../components/CoursesGrainSection'
+import CourseWhyChoose from '../sections/CourseWhyChose'
 
 export default function page() {
 
@@ -75,13 +78,13 @@ export default function page() {
             className="lg:w-1/2 w-full flex flex-col gap text-center lg:text-left"
             data-aos="fade-up-right"
           >
+            <h1 className="text-shadow-black font-jakarta text-2xl sm:text-3xl md:text-4xl lg:text-[60px] font-bold leading-[140%] relative inline-block">
+              Online <span className='text-[#098A46]'>Quran</span> Courses
+            </h1>
             <h5 className="text-sm sm:text-base md:text-lg font-poppins font-normal text-shadow-black">
               Start Your Spiritual Journey with OQC Institute’s Online Quran Courses
             </h5>
 
-            <h1 className="text-shadow-black font-jakarta text-2xl sm:text-3xl md:text-4xl lg:text-[60px] font-bold leading-[140%] relative inline-block">
-              Online <span className='text-[#098A46]'>Quran</span> Courses
-            </h1>
 
             <p className="text-sm sm:text-base md:text-lg mt-3 font-poppins font-normal text-[#535353] max-w-[90%] md:max-w-[80%] lg:max-w-[95%] mx-auto lg:mx-0">
               Begin your path to Quranic knowledge with OQC Institute’s Online Quran Courses, carefully designed to bring authentic Islamic education to your home. Whether you’re starting from the basics or advancing your Quranic understanding, our comprehensive curriculum covers everything — from learning the Arabic alphabet to mastering Tajweed, Tafseer, and Fiqh.
@@ -91,9 +94,9 @@ export default function page() {
               With flexible class timings, personalized one-on-one lessons, and expert teachers, learning the Quran online has never been this accessible and engaging. Thousands of students around the world have already deepened their connection with the Quran through our structured, easy-to-follow courses. Start your journey today with complete confidence — backed by our 100% money-back guarantee for your satisfaction.            </p>
 
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 items-center mt-4 justify-center lg:justify-start">
-              <button className="text-sm sm:text-base md:text-lg font-poppins border border-[#098A46] cursor-pointer text-white py-2.5 px-6 sm:px-8 hover:bg-[#7AC043] transition-all hover:shadow-[3px_4px_4px_#098A46] bg-[#098A46]">
+              <Link href={'/registration'} className="text-sm sm:text-base md:text-lg font-poppins border border-[#098A46] cursor-pointer text-white py-2.5 px-6 sm:px-8 hover:bg-[#7AC043] transition-all hover:shadow-[3px_4px_4px_#098A46] bg-[#098A46]">
                 Get Enrolled Now
-              </button>
+              </Link>
             </div>
           </div>
 
@@ -121,8 +124,8 @@ export default function page() {
       <div className="bg-[#F6F6F6]">
         <FreeCourse />
       </div>
-      <GrainSection />
-      <WhyChoose />
+      <CoursesGrainSection />
+      <CourseWhyChoose />
       <Teachers />
       <OurMission />
       <Aboutus />

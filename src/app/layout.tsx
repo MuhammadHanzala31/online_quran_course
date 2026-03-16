@@ -6,6 +6,7 @@ import "./globals.css";
 import 'remixicon/fonts/remixicon.css'
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import { Toaster } from "react-hot-toast";
 
 
 
@@ -48,6 +49,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} ${jakarta.variable} ${poppins.variable} antialiased`}
       >
      <Navbar/>
+     <Toaster/>
         {children}
       <Footer/>
       </body>

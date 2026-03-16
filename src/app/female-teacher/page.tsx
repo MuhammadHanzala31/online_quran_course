@@ -58,7 +58,7 @@ export default function page() {
                     </div>
                     <div className='lg:w-1/2 w-full flex-col gap-2 mt-4' >
                         <h6 className='text-[32px] font-poppins font-medium text-[black]'>Importance Of Quran Learning & Teaching </h6>
-                        <p className='text-sm sm:text-base md:text-lg mt-3 font-poppins font-normal text-[#535353] '>Lorem Ipsum is simply dummy text of the printing Lorem Ipsum is simply dummy text of the printing Lorem Ipsum is simply dummy text of the printing  Lorem Ipsum is simply dummy. Lorem Ipsum is simply dummy text of the printing Lorem Ipsum is simply dummy text of the printing Lorem Ipsum is simply dummy text of the printing Lorem Ipsum is simply dummy text of the printing Lorem Ipsum is simply dummy text of the printing  Lorem Ipsum is simply dummy. Lorem Ipsum is simply dummy text of the printing Lorem Ipsum is simply dummy text of the printing Lorem Ipsum is simply dummy text of the printing Lorem Ipsum is simply dummy text of the</p>
+                        <p className='text-sm sm:text-base md:text-lg mt-3 font-poppins font-normal text-[#535353] '>Understanding the Quran strengthens our bond with Allah, guiding us to live a life filled with purpose, inner peace, and profound spiritual tranquility. OQC Academy Deepening Faith!</p>
                     </div>
                 </div>
             </SectionLayout> */}

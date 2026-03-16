@@ -92,7 +92,6 @@ export default function page() {
                 <FreeCourse />
             </div>
             <GrainSection />
-
             <WhyChoose />
             <Teachers />
             <OurMission />

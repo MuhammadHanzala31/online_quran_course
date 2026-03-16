@@ -3,6 +3,7 @@ import SectionLayout from "@/app/components/SectionLayout";
 import Image from "next/image";
 import React from "react";
 import image from '@/../public/faq-new.jpg'
+import Link from "next/link";
 
 export default function FaqsSection() {
   const faqData = [
@@ -32,8 +33,8 @@ export default function FaqsSection() {
     <SectionLayout>
       <div className="bg-[#F7F7F7] lg:p-[117px] pb-[40px] flex items-center lg:flex-row flex-col gap-10">
         {/* Left Content */}
-        <div className="lg:w-1/2 w-full flex flex-col gap-4">
-          {/* <p className="text-[#535353] text-[16px] font-poppins font-medium">
+        <div className="lg:w-1/2 w-full flex flex-col gap-2">
+          <p className="text-[#535353] text-[16px] font-poppins font-medium">
             FAQ’s
           </p>
 
@@ -42,14 +43,13 @@ export default function FaqsSection() {
           </h5>
 
           <p className="text-[#535353] text-[16px] font-poppins font-medium max-w-[453px]">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.
+            Still do you have queston to know? Feel free to ask our experts
           </p>
 
-          <button className="text-[16px] font-poppins font-normal border border-[#098A46] cursor-pointer mt-14 text-white py-2.5 px-8 hover:bg-[#7AC043] transition-all hover:shadow-[3px_4px_4px_#098A46] bg-[#098A46] w-fit">
+          <Link href={'/registration'} className="text-[16px] font-poppins font-normal border border-[#098A46] cursor-pointer mt-7 text-white py-2.5 px-8 hover:bg-[#7AC043] transition-all hover:shadow-[3px_4px_4px_#098A46] bg-[#098A46] w-fit">
             Apply Now
-          </button> */}
-          <Image src={image} alt="f-image" height={'500'} width={'400'} className="rounded"/>
+          </Link>
+          {/* <Image src={image} alt="f-image" height={'150'} className="rounded"/> */}
         </div>
 
         {/* Right Accordion */}

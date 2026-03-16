@@ -5,12 +5,14 @@ import BannerTop from '@/../public/banner-top.png'
 import BannerBottom from '@/../public/banner-bottom.png'
 import Image from 'next/image'
 import Yellow from '@/../public/yellow-marker.webp'
+import Link from 'next/link'
+
 
 export default function Hero() {
   return (
     <SectionLayout>
       <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-10 lg:gap-0">
-        {/* LEFT CONTENT */}
+        
         <div
           className="lg:w-1/2 w-full flex flex-col gap text-center lg:text-left"
           data-aos="fade-up-right"
@@ -33,30 +35,28 @@ export default function Hero() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 items-center mt-4 justify-center lg:justify-start">
-            <button className="text-sm sm:text-base md:text-lg font-poppins border border-[#098A46] cursor-pointer text-white py-2.5 px-6 sm:px-8 hover:bg-[#7AC043] transition-all hover:shadow-[3px_4px_4px_#098A46] bg-[#098A46]">
+            <Link href='/registration' className="text-sm sm:text-base md:text-lg font-poppins border border-[#098A46] cursor-pointer text-white py-2.5 px-6 sm:px-8 hover:bg-[#7AC043] transition-all hover:shadow-[3px_4px_4px_#098A46] bg-[#098A46]">
               Get Enrolled Now
-            </button>
-            <button className="text-sm sm:text-base md:text-lg font-poppins text-[#098A46] py-2.5 px-6 sm:px-8 bg-transparent border cursor-pointer border-[#098A46] hover:text-white hover:bg-[#7AC043] transition-all hover:shadow-[3px_4px_4px_#098A46]">
+            </Link>
+            <Link href='/all-courses' className="text-sm sm:text-base md:text-lg font-poppins text-[#098A46] py-2.5 px-6 sm:px-8 bg-transparent border cursor-pointer border-[#098A46] hover:text-white hover:bg-[#7AC043] transition-all hover:shadow-[3px_4px_4px_#098A46]">
               See Courses
-            </button>
+            </Link>
           </div>
         </div>
-
-        {/* RIGHT IMAGE */}
         <div
-          className="lg:w-1/2 w-full flex items-center justify-center lg:justify-end gap-4"
+          className="lg:w-1/2 w-full flex items-center justify-center lg:justify-end gap"
           data-aos="fade-up-left"
         >
           <Image
             src={BannerImage}
             alt="banner-main"
-            className="upAndDown w-[70%] sm:w-[60%] md:w-[50%] lg:w-auto"
+            className="upAndDown w-[70%] sm:w-[60%] md:w-[50%] lg:w-[80%]"
           />
           <div className="flex gap-4 flex-col">
             <Image
               src={BannerTop}
               alt="banner-top"
-              className="upAndDown w-20 sm:w-24 md:w-28 lg:w-auto"
+              className="upAndDownw-20 sm:w-24 md:w-28 lg:w-auto"
             />
             <Image
               src={BannerBottom}

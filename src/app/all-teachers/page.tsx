@@ -4,9 +4,11 @@ import Image from 'next/image'
 import banner from '@/../public/all-teacher-1.png'
 import sec2 from '@/../public/all-t-2.png'
 import at4 from '@/../public/at-4.png'
-import blank from '@/../public/blank.png'
-import mt from '@/../public/mt.png'
-import blank2 from '@/../public/blank_2.png'
+import t1 from '@/../public/all-t-c-1.png'
+import t2 from '@/../public/all-t-c-2.png'
+import t3 from '@/../public/all-t-c-4.png'
+import all from '@/../public/all-last.png'
+
 import TeachersMainCard from '../components/TeachersMainCard'
 import TeachersAccordians from '../components/TeachersAccordians'
 import RequestFormSection from '../sections/homepage/RequestFormSection'
@@ -69,16 +71,19 @@ export default function page() {
                 </div>
                 <div className='flex lg:flex-row flex-col gap-8 justify-center '>
                     <div className='bg-[#D9D9D9] p-6 flex-col justify-center gap-2 rounded-2xl'>
-                        <h6 className='text-2xl font-semibold font-poppins text-[#000] text-center py-8'>Personalized Attention</h6>
-                        <p className='text-[#1B1B1B] text-[16px] font-poppins font-normal text-center'>Every student receives one-on-one guidance tailored to their unique learning style and pace. This ensures focused instruction and rapid, measurable progress in all aspects of Quranic recitation and study</p>
+                         <Image src={t1} alt='t-1'/>
+                        <h6 className='text-2xl font-semibold font-poppins text-[#000] pt-3'>Personalized Attention</h6>
+                        <p className='text-[#1B1B1B] text-[16px] font-poppins font-normal'>Every student receives one-on-one guidance tailored to their unique learning style and pace. This ensures focused instruction and rapid, measurable progress in all aspects of Quranic recitation and study</p>
                     </div>
                     <div className='bg-[#D9D9D9] p-6 flex-col justify-center gap-2 rounded-2xl'>
-                        <h6 className='text-2xl font-semibold font-poppins text-[#000] text-center py-8'>Certified Scholarship</h6>
-                        <p className='text-[#1B1B1B] text-[16px] font-poppins font-normal text-center'>Our entire faculty consists of certified male and female scholars holding specialized Ijazas in Tajweed and Hifz. This guarantees instruction of the highest authenticity and quality for every single lesson.</p>
+                         <Image src={t2} alt='t-1'/>
+                        <h6 className='text-2xl font-semibold font-poppins text-[#000] pt-3'>Certified Scholarship</h6>
+                        <p className='text-[#1B1B1B] text-[16px] font-poppins font-normal'>Our entire faculty consists of certified male and female scholars holding specialized Ijazas in Tajweed and Hifz. This guarantees instruction of the highest authenticity and quality for every single lesson.</p>
                     </div>
                     <div className='bg-[#D9D9D9] p-6 flex-col justify-center gap-2 rounded-2xl'>
-                        <h6 className='text-2xl font-semibold font-poppins text-[#000] text-center py-8'>Flexible Pacing</h6>
-                        <p className='text-[#1B1B1B] text-[16px] font-poppins font-normal text-center'>We adapt the learning speed and curriculum to fit your busy life, whether you are a working professional or a beginner student. This maximizes retention and seamlessly fits into your existing schedule.</p>
+                         <Image src={t3} alt='t-1'/>
+                        <h6 className='text-2xl font-semibold font-poppins text-[#000] pt-3'>Flexible Pacing</h6>
+                        <p className='text-[#1B1B1B] text-[16px] font-poppins font-normal'>We adapt the learning speed and curriculum to fit your busy life, whether you are a working professional or a beginner student. This maximizes retention and seamlessly fits into your existing schedule.</p>
                     </div>
                 </div>
             </SectionLayout>
@@ -104,6 +109,18 @@ export default function page() {
                     </ul>
                 </div>
             </SectionLayout>
+                 <TeachersAccordians />
+                        <SectionLayout>
+                            <div className='flex lg:flex-row flex-col gap-7 items-center'>
+                                <div className='lg:w-1/2 w-full flex justify-end' >
+                                    <Image src={all} alt='sorry' />
+                                </div>
+                                <div className='lg:w-1/2 w-full flex-col gap-2 mt-4' >
+                                    <h6 className='text-[32px] font-poppins font-medium text-[black]'>Importance Of Quran Learning & Teaching </h6>
+                                    <p className='text-sm sm:text-base md:text-lg mt-3 font-poppins font-normal text-[#535353] '>Understanding the Quran strengthens our bond with Allah, guiding us to live a life filled with purpose, inner peace, and profound spiritual tranquility. OQC Academy Deepening Faith!</p>
+                                </div>
+                            </div>
+                        </SectionLayout>
             <RequestFormSection />
 
         </>

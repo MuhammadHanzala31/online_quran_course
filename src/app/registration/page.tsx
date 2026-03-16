@@ -3,6 +3,7 @@
 import Image from 'next/image'
 import { useState } from 'react'
 import img from '@/../public/registration.png'
+import toast from 'react-hot-toast'
 
 export default function page() {
     const [formData, setFormData] = useState({
@@ -14,6 +15,29 @@ export default function page() {
         agreed: false,
     })
 
+    const sendEmail = async (e : any) => {
+        e.preventDefault()
+
+        const res = await fetch("/api/email", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(formData)
+        });
+
+        const result = await res.json();
+
+        if (result.success) {
+            toast.success('email sent')
+
+        } else {
+            toast.error('failed')
+        }
+
+    };
+
+
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         const { name, value, type } = e.target
         setFormData(prev => ({
@@ -22,11 +46,6 @@ export default function page() {
         }))
     }
 
-    const handleSubmit = (e: React.FormEvent) => {
-        e.preventDefault()
-        console.log('Form submitted:', formData)
-        alert('Thank you for registering!')
-    }
 
     return (
         <div className="h-full bg-gradient-to-br from-gray-50 to-gray-100">
@@ -42,7 +61,7 @@ export default function page() {
                         </div>
 
                         {/* Steps Visualization */}
-                        <Image src={img} alt='regis'/>
+                        <Image src={img} alt='regis' />
                     </div>
 
                     {/* Right Side - Form */}
@@ -51,10 +70,10 @@ export default function page() {
                             Start Your Free Trial Lesson Now.
                         </h2>
 
-                        <form onSubmit={handleSubmit} className="space-y-2">
+                        <form onSubmit={sendEmail} className="space-y-2">
                             {/* Name */}
                             <div>
-                             
+
                                 <input
                                     type="text"
                                     name="name"
@@ -68,7 +87,7 @@ export default function page() {
 
                             {/* Email */}
                             <div>
-                              
+
                                 <input
                                     type="email"
                                     name="email"
@@ -82,7 +101,7 @@ export default function page() {
 
                             {/* Phone */}
                             <div>
-                             
+
                                 <input
                                     type="tel"
                                     name="phone"
@@ -96,7 +115,7 @@ export default function page() {
 
                             {/* City & Country */}
                             <div>
-                            
+
                                 <input
                                     type="text"
                                     name="city"

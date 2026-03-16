@@ -4,9 +4,14 @@ import About1 from '@/../public/about-us-1.png'
 import About2 from '@/../public/about-2.png'
 import About3 from '@/../public/about-3.png'
 import About4 from '@/../public/about-4.png'
+import Second1 from '@/../public/second_sec-1.png'
+import sec2 from '@/../public/single-c-2.png'
+
+
 import Image from 'next/image'
 import OurMission from '../sections/homepage/OurMission'
-import ExpertTeamCard from '../components/ExpertTeamCard'
+import Link from 'next/link'
+
 
 export default function page() {
     return (
@@ -22,9 +27,9 @@ export default function page() {
                     <div className='flex flex-col gap-4 lg:w-1/2 w-full'>
                         <h6 className='text-[32px] font-poppins font-medium text-[#098A46]'>Our Legacy</h6>
                         <p className='text-[16px] font-poppins font-normal text-[#535353] w-[90%]'>Established in 2012, Online Quran Course is a trusted online platform dedicated to Quranic and Islamic education. Our mission is to make the teachings of the Holy Quran accessible to everyone, anywhere. With qualified scholars and experienced teachers, we offer structured courses in Quran reading, Tajweed, Tafseer, and Fiqh, helping students grow spiritually and learn Islam with confidence</p>
-                        <button className="text-sm sm:text-base md:text-lg font-poppins border border-[#098A46] cursor-pointer text-white py-2.5 px-6 sm:px-8 hover:bg-[#7AC043] transition-all hover:shadow-[3px_4px_4px_#098A46] bg-[#098A46] w-fit">
+                        <Link href={'/registration'} className="text-sm sm:text-base md:text-lg font-poppins border border-[#098A46] cursor-pointer text-white py-2.5 px-6 sm:px-8 hover:bg-[#7AC043] transition-all hover:shadow-[3px_4px_4px_#098A46] bg-[#098A46] w-fit">
                             Get Enrolled Now
-                        </button>
+                        </Link>
                     </div>
                     <div className='flex flex-col gap-4 lg:w-1/2 w-full'>
                         <Image src={About1} alt='about-us-1' />
@@ -34,16 +39,15 @@ export default function page() {
             <SectionLayout>
                 <div className='flex items-center lg:flex-row flex-col'>
                     <div className='flex flex-col gap-4 lg:w-1/2 w-full'>
-                        <Image src={About1} alt='about-us-1' />
+                        <Image src={Second1} alt='about-us-1' />
                     </div>
                     <div className='flex flex-col gap-4 lg:w-1/2 w-full'>
                         <h6 className='text-[32px] font-poppins font-medium text-[#098A46]'>A Complete and Flexible Quran Learning Experience </h6>
                         <p className='text-[16px] font-poppins font-normal text-[#535353] w-[90%]'>Online Quran Course offers a structured and easy-to-follow online Quran learning experience designed for students of all levels. Our curriculum focuses on proper Tajweed, word-by-word understanding of Quranic verses, and essential Islamic knowledge. With qualified teachers and one-to-one attention, students learn at their own pace through flexible online classes that fit easily into busy daily routines.</p>
-                        <button className="text-sm sm:text-base md:text-lg font-poppins border border-[#098A46] cursor-pointer text-white py-2.5 px-6 sm:px-8 hover:bg-[#7AC043] transition-all hover:shadow-[3px_4px_4px_#098A46] bg-[#098A46] w-fit">
+                        <Link href={'/registration'} className="text-sm sm:text-base md:text-lg font-poppins border border-[#098A46] cursor-pointer text-white py-2.5 px-6 sm:px-8 hover:bg-[#7AC043] transition-all hover:shadow-[3px_4px_4px_#098A46] bg-[#098A46] w-fit">
                             Get Enrolled Now
-                        </button>
+                        </Link>
                     </div>
-
                 </div>
             </SectionLayout>
             <OurMission />
@@ -67,14 +71,14 @@ export default function page() {
                 </div>
                 <div className='flex items-center lg:flex-row flex-col mt-20'>
                     <div className='flex flex-col gap-4 lg:w-1/2 w-full'>
-                        <Image src={About2} alt='about-us-1' />
+                        <Image src={sec2} alt='about-us-1' />
                     </div>
                     <div className='flex flex-col gap-4 lg:w-1/2 w-full justify-between'>
                         <h6 className='text-[32px] font-poppins font-medium text-black'>Expertise and Excellence in Online Learning</h6>
                         <p className='text-[16px] font-poppins font-normal text-[#535353] w-[80%]'>At Online Quran Course, we prioritize high-quality online education by providing experienced and qualified teachers who know how to engage students effectively. Our focus is to create an interactive learning environment that helps students understand the Quran and Islamic teachings while growing in knowledge, faith, and personal development.</p>
-                        <button className="text-sm sm:text-base md:text-lg font-poppins border border-[#098A46] cursor-pointer text-white py-2.5 px-6 sm:px-8 hover:bg-[#7AC043] transition-all hover:shadow-[3px_4px_4px_#098A46] bg-[#098A46] w-fit">
+                        <Link href={'/registration'}  className="text-sm sm:text-base md:text-lg font-poppins border border-[#098A46] cursor-pointer text-white py-2.5 px-6 sm:px-8 hover:bg-[#7AC043] transition-all hover:shadow-[3px_4px_4px_#098A46] bg-[#098A46] w-fit">
                             Get Enrolled Now
-                        </button>
+                        </Link>
                     </div>
                 </div>
                 <div className='flex items-center lg:flex-row flex-col mt-20'>
