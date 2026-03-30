@@ -6,35 +6,52 @@ import img from '@/../public/registration.png'
 import toast from 'react-hot-toast'
 
 export default function page() {
+    const [loading, setLoading] = useState(false)
+
     const [formData, setFormData] = useState({
         name: '',
         email: '',
         phone: '',
         city: '',
         message: '',
+        course: "",
         agreed: false,
     })
 
-    const sendEmail = async (e : any) => {
+    const sendEmail = async (e: any) => {
         e.preventDefault()
+        setLoading(true)
 
-        const res = await fetch("/api/email", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(formData)
-        });
+        try {
+            const res = await fetch("/api/email", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(formData)
+            });
 
-        const result = await res.json();
+            const result = await res.json();
 
-        if (result.success) {
-            toast.success('email sent')
-
-        } else {
-            toast.error('failed')
+            if (result.success) {
+                toast.success('Email sent ✅')
+                setFormData({
+                    name: '',
+                    email: '',
+                    phone: '',
+                    city: '',
+                    message: '',
+                    course: "",
+                    agreed: false,
+                })
+            } else {
+                toast.error('Failed ❌')
+            }
+        } catch (error) {
+            toast.error('Something went wrong ❌')
         }
 
+        setLoading(false)
     };
 
 
@@ -126,6 +143,18 @@ export default function page() {
                                     className="w-full px-4 py-3 border-2 border-gray-300 rounded-none focus:outline-none focus:border-[#098A46] transition-colors"
                                 />
                             </div>
+                            <div>
+
+                                <input
+                                    type="text"
+                                    name="course"
+                                    placeholder="Enter Your Course"
+                                    value={formData.course}
+                                    onChange={handleChange}
+                                    required
+                                    className="w-full px-4 py-3 border-2 border-gray-300 rounded-none focus:outline-none focus:border-[#098A46] transition-colors"
+                                />
+                            </div>
 
                             {/* Message */}
                             <div>
@@ -158,12 +187,16 @@ export default function page() {
                                 </label>
                             </div>
 
-                            {/* Submit Button */}
                             <button
                                 type="submit"
-                                className="w-full bg-[#098A46] hover:bg-[#077a3d] text-white font-bold py-3 px-6 rounded-none transition-colors duration-200"
+                                disabled={loading}
+                                className={`w-full flex justify-center items-center gap-2 py-3 font-bold text-white transition 
+                                ${loading ? 'bg-gray-400 cursor-not-allowed' : 'bg-[#098A46] hover:bg-[#077a3d]'}`}
                             >
-                                Submit
+                                {loading && (
+                                    <span className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></span>
+                                )}
+                                {loading ? 'Submitting...' : 'Submit'}
                             </button>
                         </form>
                     </div>
