@@ -19,72 +19,80 @@ export async function POST(req: Request) {
     });
 
     await transporter.sendMail({
-      from: `"Website Form" <${'process.env.EMAIL_USER'}>`,
+      from: `Website Form" <${'onlinequrancourse.com'}>`,
       to: email,
       subject: "Registration Form OQC",
       html: `
-     <body
+    <body
   style="
     margin: 0;
     padding: 0;
-    background-color: #f5f0eb;
-    font-family: Georgia, serif;
+    background-color: #f4f7f5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   "
 >
-  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #f5f0eb">
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
     <tr>
-      <td align="center" style="padding: 10px 10px">
+      <td align="center" style="padding: 20px 10px">
 
-        <!-- MAIN CONTAINER -->
+        <!-- MAIN BOX -->
         <table
           width="620"
           cellpadding="0"
           cellspacing="0"
-          border="0"
           style="
-            background-color: #ffffff;
-            border-radius: 4px;
+            background: #ffffff;
+            border-radius: 8px;
             overflow: hidden;
-            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
           "
         >
-
-          <!-- HEADER -->
+          <!-- TOP LINE -->
           <tr>
-            <td align="center" style="background-color: #d4c4b4; padding: 36px 40px">
+            <td style="height:5px; background:#098a46;"></td>
+          </tr>
+
+          <!-- HERO IMAGE -->
+          <tr>
+            <td>
               <img
-                src="https://onlinequrancourse.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FOnline%20Quran%20Logo%20Final.8bc36ea6.png&w=128&q=75"
-                width="200"
+                src="https://res.cloudinary.com/dvcfuwk8i/image/upload/v1775259953/oqc_image-01_byxzl6.png"
+                width="100%"
+                style="display:block;"
               />
             </td>
           </tr>
 
-          <tr>
-            <td style="height: 4px; background-color: #4CAF50"></td>
-          </tr>
-
           <!-- CONTENT -->
           <tr>
-            <td style="padding: 44px 48px 36px 48px">
+            <td style="padding:40px 45px; color:#333;">
 
-              <!-- GREETING -->
-              <p style="font-size:16px; line-height:1.7;">
+              <p style="font-size:16px;">
                 Assalamu Alaikum <strong>${name}</strong>,
               </p>
 
-              <!-- MESSAGE -->
-              <p style="font-size:16px; line-height:1.8;">
+              <p style="font-size:16px; line-height:1.7;">
                 JazakAllah for registering for our <strong>Online Quran Course</strong>.
-                We have received your details successfully. Our team will contact you shortly for your trial class.
+                We have received your details successfully. Our team will contact you shortly
+                for your trial class.
               </p>
 
-              <p style="font-size:16px; line-height:1.8;">
-                Below are your submitted details:
+              <p style="margin-top:20px; font-size:16px;">
+                Here are your submitted details:
               </p>
 
-              <!-- USER DATA -->
-              <table width="100%" cellpadding="8" cellspacing="0" style="border:1px solid #eee; margin-bottom:20px;">
-                <tr>
+              <!-- USER INFO -->
+              <table
+                width="100%"
+                cellpadding="10"
+                cellspacing="0"
+                style="
+                  border:1px solid #e6e6e6;
+                  border-radius:6px;
+                  margin-top:10px;
+                "
+              >
+                <tr style="background:#f9f9f9;">
                   <td><strong>Name:</strong></td>
                   <td>${name}</td>
                 </tr>
@@ -92,7 +100,7 @@ export async function POST(req: Request) {
                   <td><strong>Email:</strong></td>
                   <td>${email}</td>
                 </tr>
-                <tr>
+                <tr style="background:#f9f9f9;">
                   <td><strong>Phone:</strong></td>
                   <td>${phone}</td>
                 </tr>
@@ -100,24 +108,25 @@ export async function POST(req: Request) {
                   <td><strong>Country:</strong></td>
                   <td>${city}</td>
                 </tr>
-                <tr>
+                <tr style="background:#f9f9f9;">
                   <td><strong>Course:</strong></td>
                   <td>${course}</td>
                 </tr>
               </table>
 
-              <!-- CTA -->
-              <table width="100%">
+              <!-- BUTTON -->
+              <table width="100%" style="margin-top:30px;">
                 <tr>
                   <td align="center">
                     <a
                       href="https://onlinequrancourse.com"
                       style="
-                        background-color:#4CAF50;
-                        color:#fff;
-                        padding:14px 30px;
+                        background:#098a46;
+                        color:#ffffff;
+                        padding:14px 28px;
                         text-decoration:none;
-                        border-radius:3px;
+                        border-radius:4px;
+                        font-weight:600;
                         display:inline-block;
                       "
                     >
@@ -127,13 +136,13 @@ export async function POST(req: Request) {
                 </tr>
               </table>
 
-              <p style="margin-top:30px;">
+              <p style="margin-top:30px; font-size:14px;">
                 If you have any questions, feel free to contact us anytime.
               </p>
 
-              <p>
+              <p style="font-size:14px;">
                 Regards,<br />
-                <strong style="color:#4CAF50;">Online Quran Course Team</strong>
+                <strong style="color:#098a46;">Online Quran Course Team</strong>
               </p>
 
             </td>
@@ -141,10 +150,17 @@ export async function POST(req: Request) {
 
           <!-- FOOTER -->
           <tr>
-            <td style="background-color:#d4c4b4; padding:20px; text-align:center;">
-              <p style="font-size:13px;">
-                onlinequrancourse@gmail.com  | www.onlinequrancourse.com
-              </p>
+            <td
+              style="
+                background:#e9f5ee;
+                text-align:center;
+                padding:20px;
+                font-size:13px;
+                color:#555;
+              "
+            >
+              onlinequrancourse@gmail.com <br />
+              www.onlinequrancourse.com
             </td>
           </tr>
 
