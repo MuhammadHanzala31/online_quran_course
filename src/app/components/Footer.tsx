@@ -24,10 +24,10 @@ export default function Footer() {
           <h3 className="text-3xl font-bold font-jakarta mb-6 ">Go To</h3>
           <ul className="space-y-2">
             <li><Link href="/" className="hover:text-[#FFB706] text-lg font-medium font-poppins">Home</Link></li>
-            <li><Link href="/about" className="hover:text-[#FFB706] text-lg font-medium font-poppins">About</Link></li>
+            <li><Link href="/about-us" className="hover:text-[#FFB706] text-lg font-medium font-poppins">About</Link></li>
             <li><Link href="/all-courses" className="hover:text-[#FFB706] text-lg font-medium font-poppins">All Courses</Link></li>
             <li><Link href="/all-teachers" className="hover:text-[#FFB706] text-lg font-medium font-poppins">All Teachers</Link></li>
-            <li><Link href="/contact" className="hover:text-[#FFB706] text-lg font-medium font-poppins">Contact Us</Link></li>
+            <li><Link href="/contact-us" className="hover:text-[#FFB706] text-lg font-medium font-poppins">Contact Us</Link></li>
           </ul>
         </div>
 
