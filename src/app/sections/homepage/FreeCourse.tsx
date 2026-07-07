@@ -63,7 +63,7 @@ export default function FreeCourse() {
         <p className='text-[#535353] text-[16px] font-poppins mx-auto font-medium max-w-[614px]'>Bonus Free Courses with Your Featured Course Enrollment</p>
         <h5 className='text-4xl font-poppins font-medium max-w-[614px] mx-auto'>Free Online Quran Classes <span className='text-[#098A46]'>By OQC Academy</span></h5>
       </div>
-      <div className='grid grid-cols-3 space-x-2 space-y-2' data-aos="zoom-in-up">
+      <div className='grid lg:grid-cols-3 grid-cols-1 space-x-2 space-y-2' data-aos="zoom-in-up">
         {
           islamicCourses.map( course => (<FreeCourseCard key={course.id} title={course.title} description={course.description} image={course.image} />))
         }

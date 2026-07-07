@@ -71,7 +71,7 @@ export default function WhyChoose() {
                 <h5 className='text-4xl font-poppins font-medium max-w-[614px] mx-auto'>Your Best Choice for  <span className='text-[#098A46]'> Online Quran Classes in USA</span></h5>
                 <p className='text-[#535353] text-[16px] font-poppins mx-auto font-medium max-w-[992px]'>Choose OQC Academy for expert-led, flexible online Quran learning for your convenience. Our interactive platform ensures engaging lessons by certified instructors and a diverse curriculum that meets flexible scheduling. Discover how convenient and effective Quran learning can be!</p>
             </div>
-            <div className='grid grid-cols-3 space-x-2.5 space-y-16 lg:mt-[123px]'>
+            <div className='grid lg:grid-cols-3 grid-cols-1 space-x-2.5 space-y-16 lg:mt-[123px]'>
                 {quranFeatures.map(choice => (<WhYChooseCard description={choice.description} title={choice.title} image={choice.image} key={choice.id} />))}
             </div>
         </SectionLayout>
