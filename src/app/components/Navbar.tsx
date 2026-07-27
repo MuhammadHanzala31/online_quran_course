@@ -189,7 +189,7 @@ export default function Navbar() {
 
   const teachers = [
     { label: "Female Teachers", href: "/female-teacher" },
-    { label: "Male Teachers", href: "/female-teacher" },
+    { label: "Male Teachers", href: "/male-teacher" },
   ];
   const courses = [
     { label: "Quran Memorization", href: "/course/quran-memorization" },
