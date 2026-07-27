@@ -17,8 +17,8 @@ export default function Teachers() {
                 <TeacherBlock title='Female Tutors' description='Compassionate, qualified teachers offering respectful and supportive Quran learning for female learners.' bgColor='bg-[#098A46]' textColor='text-white'/>
             </div>
             <div className='flex lg:flex-row flex-col gap-13 mt-[100px]'>
-                <TeacherCard/>
-                <TeacherCard/>
+                <TeacherCard name1='Muhammad Ali' designation1='Quran Teacher' name2='Hafiz Usman Ali' designation2='Quran Teacher'/>
+                <TeacherCard name1='Saad Khan' designation1='Hafiz' name2='Abdullah Tariq' designation2='Hafiz'/>
             </div>
         </SectionLayout>
     )

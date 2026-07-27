@@ -213,7 +213,7 @@ import more from '@/../public/more.jpg'
 import sc2 from '@/../public/sc-2.png'
 import sc3 from '@/../public/sc-3.png'
 import sc4 from '@/../public/sc-4.png'
-
+import BookForm from '@/app/sections/homepage/BookForm'
 
 export const metadata: Metadata = {
     title: "Islamic Fiqh Course Details",
@@ -344,7 +344,7 @@ export default async function Page({ params }:
             </SectionLayout>
 
             <StepsSection />
-
+                <BookForm/>
             <SectionLayout>
                 <div className='lg:w-1/2 w-full flex flex-col gap-4 mb-6'>
                     <h1 className='text-black font-medium font-poppins text-[26px] lg:text-[36px] '>More About Islamic Fiqh Course</h1>

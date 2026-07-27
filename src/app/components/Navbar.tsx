@@ -217,9 +217,9 @@ export default function Navbar() {
             <Link  href={'mailto:info@onlinequrancourse.com'} className="text-lg font-medium font-poppins flex gap-1 items-center mb-2 text-white"><i className="ri-mail-line text-2xl text-[#FFB706]"></i> info@onlinequrancourse.com</Link>
           </div>
           <div className="flex gap-2 items-center">
-            <Link href={'/'} className="h-8 w-8 flex justify-center items-center rounded-none bg-transparent border border-[#FFB706]"><i className="ri-facebook-fill text-[#FFB706] text-xl"></i></Link>
-            <Link href={'/'} className="h-8 w-8 flex justify-center items-center rounded-none bg-transparent border border-[#FFB706]"><i className="ri-twitter-x-line text-[#FFB706] text-xl"></i></Link>
-            <Link href={'/'} className="h-8 w-8 flex justify-center items-center rounded-none bg-transparent border border-[#FFB706]"><i className="ri-instagram-fill text-[#FFB706] text-xl"></i></Link>
+            <Link href={'https://www.facebook.com/onlinequrancourse/'} className="h-8 w-8 flex justify-center items-center rounded-none bg-transparent border border-[#FFB706]"><i className="ri-facebook-fill text-[#FFB706] text-xl"></i></Link>
+            <Link href={'https://x.com/OnlineQC/'} className="h-8 w-8 flex justify-center items-center rounded-none bg-transparent border border-[#FFB706]"><i className="ri-twitter-x-line text-[#FFB706] text-xl"></i></Link>
+            <Link href={'https://www.instagram.com/onlinequrancourse'} className="h-8 w-8 flex justify-center items-center rounded-none bg-transparent border border-[#FFB706]"><i className="ri-instagram-fill text-[#FFB706] text-xl"></i></Link>
           </div>
         </div>
       </div>
