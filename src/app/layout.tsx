@@ -113,6 +113,10 @@ export default function RootLayout({
 
   return (
     <html lang="en">
+      <head>
+      {/* this is a comment from zia you can put search console code below this comment  */} 
+      
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${jakarta.variable} ${poppins.variable} antialiased`}
       >
