@@ -5,10 +5,13 @@ import TestimonialCard from '../components/TestimonialCard'
 import testi from '@/../public/testi.png'
 import testiFooter from '@/../public/testi-footer.png'
 import Image from 'next/image'
+import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
 
 export default function page() {
     return (
-        <>
+        <> 
+        <Navbar/>
             <BreadcrumHero />
             <SectionLayout>
                 <div className='flex lg:flex-row flex-col'>
@@ -45,6 +48,7 @@ export default function page() {
                     </div>
                 </section>
             </div>
+            <Footer/>
         </>
     )
 }

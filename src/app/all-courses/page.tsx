@@ -17,6 +17,8 @@ import GrainSection from '../sections/homepage/GrainSection'
 import Link from 'next/link'
 import CoursesGrainSection from '../components/CoursesGrainSection'
 import CourseWhyChoose from '../sections/CourseWhyChose'
+import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
 
 export default function page() {
 
@@ -71,6 +73,7 @@ export default function page() {
 
   return (
     <div>
+      <Navbar/>
       <SectionLayout>
         <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-10 lg:gap-0">
           {/* LEFT CONTENT */}
@@ -131,6 +134,7 @@ export default function page() {
       <Aboutus />
       <RequestFormSection />
       <FaqsSection />
+      <Footer/>
     </div>
   )
 }

@@ -11,11 +11,14 @@ import sec2 from '@/../public/single-c-2.png'
 import Image from 'next/image'
 import OurMission from '../sections/homepage/OurMission'
 import Link from 'next/link'
+import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
 
 
 export default function page() {
     return (
-        <>
+        <>  
+        <Navbar/>
             <div className='h-[409px] about-hero flex justify-between items-center'>
                 <div className='flex text-center flex-col max-w-[688px] mx-auto w-full gap-6'>
                     <h1 className='text-white  w-full text-center font-poppins text-5xl font-medium'>About us</h1>
@@ -108,6 +111,7 @@ export default function page() {
                     </div>
                 </div>
             </SectionLayout>
+            <Footer/>
             {/* <SectionLayout>
                 <div className='grid grid-cols-3'>
                     <ExpertTeamCard />

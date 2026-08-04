@@ -8,10 +8,13 @@ import RequestFormSection from '../sections/homepage/RequestFormSection'
 import TeachersAccordians from '../components/TeachersAccordians'
 import single4 from '@/../public/single-t-4.png'
 import single6 from '@/../public/single-t-6.png'
+import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
 
 export default function page() {
     return (
         <>
+        <Navbar/>
             <div className='single-teacher'>
                 <div className='max-w-[1400px] w-full mx-auto lg:px-4 px-8 lg:my-[0px] my-7 lg:py-10 py-4 '>
                     <div className='flex lg:flex-row flex-col items-center'>
@@ -63,6 +66,7 @@ export default function page() {
                 </div>
             </SectionLayout> */}
             <RequestFormSection />
+            <Footer/>
         </>
     )
 }

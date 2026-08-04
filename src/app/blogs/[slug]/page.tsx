@@ -293,6 +293,8 @@ import React from "react";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Navbar from "@/app/components/Navbar";
+import Footer from "@/app/components/Footer";
 
 type Post = {
   id: number;
@@ -377,6 +379,7 @@ export default async function BlogPage({
 
   return (
     <div className="min-h-screen bg-white">
+      <Navbar/>
       {/* Banner/Header */}
       <div className="w-full bg-gradient-to-r from-[#098A46] to-[#076a35] py-12">
         <div className="max-w-4xl mx-auto px-9 lg:px-0">
@@ -428,6 +431,7 @@ export default async function BlogPage({
           </Link>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 }

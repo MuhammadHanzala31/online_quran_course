@@ -16,10 +16,13 @@ import OurMission from "./sections/homepage/OurMission";
 import RequestFormSection from "./sections/homepage/RequestFormSection";
 import FaqsSection from "./sections/homepage/FaqsSection";
 import SliderTestimonial from "./sections/homepage/SliderTestimonial";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
       <>
+      <Navbar/>
        <Hero/>
        <TrustSection/>
        <StepsSection/>
@@ -37,6 +40,7 @@ export default function Home() {
        <OurMission/>
        <RequestFormSection/>
        <FaqsSection/>
+       <Footer/>
       </>
   );
 }

@@ -12,10 +12,13 @@ import all from '@/../public/all-last.png'
 import TeachersMainCard from '../components/TeachersMainCard'
 import TeachersAccordians from '../components/TeachersAccordians'
 import RequestFormSection from '../sections/homepage/RequestFormSection'
+import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
 
 export default function page() {
     return (
         <>
+        <Navbar/>
             <div className='all-teacher'>
                 <div className='max-w-[1330px] w-full mx-auto lg:px-4 px-8 lg:my-[30px] my-7 lg:py-5 py-4 '>
                     <div className='flex lg:flex-row flex-col items-center'>
@@ -122,7 +125,7 @@ export default function page() {
                             </div>
                         </SectionLayout>
             <RequestFormSection />
-
+            <Footer/>
         </>
     )
 }

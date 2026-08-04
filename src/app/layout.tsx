@@ -136,10 +136,8 @@ export default function RootLayout({
               __html: JSON.stringify(organizationSchema),
             }}
           />
-        <Navbar />
         <Toaster />
         {children}
-        <Footer />
       </body>
     </html>
   );

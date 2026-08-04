@@ -17,11 +17,14 @@ import BookForm from '../sections/homepage/BookForm'
 import FeaturedCourse from '../sections/homepage/FeaturedCourse'
 import FreeCourse from '../sections/homepage/FreeCourse'
 import GrainSection from '../sections/homepage/GrainSection'
+import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
 
 
 export default function page() {
     return (
-        <>
+        <> 
+        <Navbar/>
             <SectionLayout>
                 <div className='flex lg:flex-row flex-col gap-6'>
                     <div className='flex flex-col gap-2.5 self-start lg:w-1/2 w-full'>
@@ -73,6 +76,7 @@ export default function page() {
             <Aboutus />
             <RequestFormSection />
             <FaqsSection />
+            <Footer/>
         </>
     )
 }

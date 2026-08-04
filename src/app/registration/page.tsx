@@ -4,6 +4,8 @@ import Image from 'next/image'
 import { useState } from 'react'
 import img from '@/../public/registration.png'
 import toast from 'react-hot-toast'
+import Footer from '../components/Footer'
+import Navbar from '../components/Navbar'
 
 export default function page() {
     const [loading, setLoading] = useState(false)
@@ -65,6 +67,8 @@ export default function page() {
 
 
     return (
+        <>
+        <Navbar/>
         <div className="h-full bg-gradient-to-br from-gray-50 to-gray-100">
             <div className="max-w-7xl mx-auto px-4 py-8">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -91,6 +95,7 @@ export default function page() {
                             {/* Name */}
                             <div>
 
+        
                                 <input
                                     type="text"
                                     name="name"
@@ -203,5 +208,7 @@ export default function page() {
                 </div>
             </div>
         </div>
+        <Footer/>
+        </>
     )
 }

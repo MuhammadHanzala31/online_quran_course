@@ -17,10 +17,13 @@ import SliderTestimonial from '../sections/homepage/SliderTestimonial'
 import LmsSection from '../components/LmsSection'
 import FeaturedCourse from '../sections/homepage/FeaturedCourse'
 import GrainSection from '../sections/homepage/GrainSection'
+import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
 
 export default function page() {
     return (
         <>
+        <Navbar/>
             <div className='uk-hero overflow-hidden'>
                 <SectionLayout>
                     <div className='flex lg:flex-row flex-col items-center w-full'>
@@ -106,6 +109,7 @@ export default function page() {
             <SliderTestimonial />
             <RequestFormSection />
             <FaqsSection />
+            <Footer/>
         </>
     )
 }

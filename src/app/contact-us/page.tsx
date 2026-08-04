@@ -2,6 +2,8 @@ import React from 'react'
 import contactUs from '@/../public/contact-hero.png'
 import SectionLayout from '../components/SectionLayout'
 import TestimonialCard from '../components/TestimonialCard'
+import Footer from '../components/Footer';
+import Navbar from '../components/Navbar';
 
 export default function page() {
     const testimonials = [
@@ -44,6 +46,7 @@ export default function page() {
   ];
   return (
     <>
+    <Navbar/>
       <div className='h-[409px] contact-hero flex justify-between items-center'>
         <div className='flex text-center flex-col max-w-[688px] mx-auto w-full gap-6'>
           <h1 className='text-white  w-full text-center font-poppins text-5xl font-medium'>Contact us</h1>
@@ -111,6 +114,7 @@ export default function page() {
           }
         </div>
       </SectionLayout>
+      <Footer/>
     </>
   )
 }

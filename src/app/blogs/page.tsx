@@ -4,6 +4,8 @@ import RecentBlogsCard from "../components/blogs/RecentBlogsCard";
 import BlogBanner from "../components/blogs/BlogBanner";
 import Image from "next/image";
 import Link from "next/link";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 type Post = {
   id: number;
@@ -41,6 +43,7 @@ export default async function Page() {
 
   return (
     <div>
+      <Navbar/>
       <BlogBanner />
 
       <div className="flex lg:flex-row flex-col max-w-7xl gap-5 w-full lg:px-0 px-9 mx-auto">
@@ -165,6 +168,7 @@ export default async function Page() {
           </div>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 }
