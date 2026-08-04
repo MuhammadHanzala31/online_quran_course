@@ -9,15 +9,11 @@ import {
 } from "react";
 
 interface SidebarContextValue {
-  /** desktop: collapsed to icon-rail vs full width */
   isCollapsed: boolean;
   toggleCollapsed: () => void;
-  /** mobile: off-canvas drawer open/closed */
   isMobileOpen: boolean;
   toggleMobile: () => void;
   closeMobile: () => void;
-  /** single entry point for the topbar button: collapses on desktop,
-   *  opens/closes the drawer on mobile */
   toggleSidebar: () => void;
 }
 
@@ -29,7 +25,6 @@ export function SidebarProvider({ children }: { children: ReactNode }) {
   const [isCollapsed, setIsCollapsed] = useState(false);
   const [isMobileOpen, setIsMobileOpen] = useState(false);
 
-  // Close the mobile drawer automatically if the viewport grows to desktop size
   useEffect(() => {
     const mq = window.matchMedia("(min-width: 1024px)");
     const handleChange = (e: MediaQueryListEvent | MediaQueryList) => {
