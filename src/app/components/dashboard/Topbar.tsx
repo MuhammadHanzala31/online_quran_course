@@ -2,9 +2,23 @@
 
 import { Menu, Search, Bell } from "lucide-react";
 import { useSidebar } from "@/context/SidebarContext";
+import { useState } from "react";
+
+import { useRouter } from "next/navigation";
+import { logoutAction } from "@/utils/authController";
 
 export default function Topbar() {
+
+  const router = useRouter();
+
+  const handleLogout = async () => {
+    await logoutAction();
+    router.push("/login");
+    router.refresh();
+  };
+  
   const { toggleSidebar } = useSidebar();
+  const [infobar, setInfobar] = useState(false)
 
   return (
     <header className="sticky top-0 z-20 flex h-16 items-center gap-4 justify-between border-b border-border bg-surface/80 px-4 backdrop-blur-md sm:px-6">
@@ -35,14 +49,22 @@ export default function Topbar() {
 
         <div className="mx-1 h-6 w-px bg-border" />
 
-        <button className="flex items-center gap-2 rounded-lg py-1 pl-1 pr-2 hover:bg-surface-2">
+        <button className="flex items-center gap-2 rounded-lg py-1 pl-1 pr-2 hover:bg-surface-2 relative" onClick={() => setInfobar(true)}>
           <div className="flex h-8 w-8 items-center bg-green-600 justify-center rounded-full bg-info/20 text-sm font-semibold text-info">
             A
           </div>
-          <div className="hidden text-left leading-tight sm:block">
+          <div className="hidden text-left leading-tight sm:block " >
             <p className="text-sm font-medium text-ink">OQC</p>
             <p className="text-xs text-muted">Admin</p>
+            
           </div>
+          {
+              infobar && (
+                <div className="absolute w-[150px] bg-white shadow-lg top-14 p-2 right-0 flex flex-col gap-4">
+                    <button className="bg-red-700/70 p-3 text-white font-sans text-sm cursor-pointer" onClick={handleLogout}> Logout </button>
+                </div>
+              )
+            }
         </button>
       </div>
     </header>
